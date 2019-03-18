@@ -1,0 +1,2 @@
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) ../../../src/IPCore/XCVR_Modules/xcvr_8B10B/xcvr_8B10B.qip]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) ../../../src/IPCore/clk_buffer/clk_buffer/clk_buffer.qip]

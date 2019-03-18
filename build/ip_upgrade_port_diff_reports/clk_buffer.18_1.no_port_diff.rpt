@@ -1,0 +1,23 @@
+IP Ports Diff Report for clk_buffer
+Thu Oct 25 16:55:09 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++-------------------------------------------------------------------+
+; IP Information                                                    ;
++----------------------+--------------------------------------------+
+; IP Variation Name    ; clk_buffer                                 ;
+; Prior Version        ; 18.0                                       ;
+; New Version          ; 18.1                                       ;
+; New File             ; clk_buffer/clk_buffer/synth/clk_buffer.vhd ;
+; Has Port Differences ; No                                         ;
++----------------------+--------------------------------------------+
+
+

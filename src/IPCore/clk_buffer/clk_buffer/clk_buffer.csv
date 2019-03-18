@@ -1,0 +1,18 @@
+# system info clk_buffer on 2018.10.25.16:55:07
+system_info:
+name,value
+DEVICE,10AX066N3F40E2SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1540457707
+#
+#
+# Files generated for clk_buffer on 2018.10.25.16:55:07
+files:
+filepath,kind,attributes,module,is_top
+sim/clk_buffer.vhd,VHDL,CONTAINS_INLINE_CONFIGURATION,clk_buffer,true
+altclkctrl_181/sim/clk_buffer_altclkctrl_181_4ev4gqi.vhd,VHDL,,clk_buffer_altclkctrl_181_4ev4gqi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+clk_buffer.altclkctrl_0,clk_buffer_altclkctrl_181_4ev4gqi

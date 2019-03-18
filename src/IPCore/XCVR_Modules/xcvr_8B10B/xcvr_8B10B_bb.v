@@ -1,0 +1,170 @@
+
+module xcvr_8B10B (
+	clk_clk,
+	reset_reset_n,
+	xcvr_native_a10_0_rx_clkout_ch0_clk,
+	xcvr_native_a10_0_rx_clkout_ch1_clk,
+	xcvr_native_a10_0_rx_clkout_ch2_clk,
+	xcvr_native_a10_0_rx_clkout_ch3_clk,
+	xcvr_native_a10_0_rx_coreclkin_ch0_clk,
+	xcvr_native_a10_0_rx_coreclkin_ch1_clk,
+	xcvr_native_a10_0_rx_coreclkin_ch2_clk,
+	xcvr_native_a10_0_rx_coreclkin_ch3_clk,
+	xcvr_native_a10_0_rx_datak_ch0_rx_datak,
+	xcvr_native_a10_0_rx_datak_ch1_rx_datak,
+	xcvr_native_a10_0_rx_datak_ch2_rx_datak,
+	xcvr_native_a10_0_rx_datak_ch3_rx_datak,
+	xcvr_native_a10_0_rx_disperr_ch0_rx_disperr,
+	xcvr_native_a10_0_rx_disperr_ch1_rx_disperr,
+	xcvr_native_a10_0_rx_disperr_ch2_rx_disperr,
+	xcvr_native_a10_0_rx_disperr_ch3_rx_disperr,
+	xcvr_native_a10_0_rx_errdetect_ch0_rx_errdetect,
+	xcvr_native_a10_0_rx_errdetect_ch1_rx_errdetect,
+	xcvr_native_a10_0_rx_errdetect_ch2_rx_errdetect,
+	xcvr_native_a10_0_rx_errdetect_ch3_rx_errdetect,
+	xcvr_native_a10_0_rx_parallel_data_ch0_rx_parallel_data,
+	xcvr_native_a10_0_rx_parallel_data_ch1_rx_parallel_data,
+	xcvr_native_a10_0_rx_parallel_data_ch2_rx_parallel_data,
+	xcvr_native_a10_0_rx_parallel_data_ch3_rx_parallel_data,
+	xcvr_native_a10_0_rx_patterndetect_ch0_rx_patterndetect,
+	xcvr_native_a10_0_rx_patterndetect_ch1_rx_patterndetect,
+	xcvr_native_a10_0_rx_patterndetect_ch2_rx_patterndetect,
+	xcvr_native_a10_0_rx_patterndetect_ch3_rx_patterndetect,
+	xcvr_native_a10_0_rx_runningdisp_ch0_rx_runningdisp,
+	xcvr_native_a10_0_rx_runningdisp_ch1_rx_runningdisp,
+	xcvr_native_a10_0_rx_runningdisp_ch2_rx_runningdisp,
+	xcvr_native_a10_0_rx_runningdisp_ch3_rx_runningdisp,
+	xcvr_native_a10_0_rx_serial_data_ch0_rx_serial_data,
+	xcvr_native_a10_0_rx_serial_data_ch1_rx_serial_data,
+	xcvr_native_a10_0_rx_serial_data_ch2_rx_serial_data,
+	xcvr_native_a10_0_rx_serial_data_ch3_rx_serial_data,
+	xcvr_native_a10_0_rx_seriallpbken_ch0_rx_seriallpbken,
+	xcvr_native_a10_0_rx_seriallpbken_ch1_rx_seriallpbken,
+	xcvr_native_a10_0_rx_seriallpbken_ch2_rx_seriallpbken,
+	xcvr_native_a10_0_rx_seriallpbken_ch3_rx_seriallpbken,
+	xcvr_native_a10_0_rx_std_wa_patternalign_ch0_rx_std_wa_patternalign,
+	xcvr_native_a10_0_rx_std_wa_patternalign_ch1_rx_std_wa_patternalign,
+	xcvr_native_a10_0_rx_std_wa_patternalign_ch2_rx_std_wa_patternalign,
+	xcvr_native_a10_0_rx_std_wa_patternalign_ch3_rx_std_wa_patternalign,
+	xcvr_native_a10_0_rx_syncstatus_ch0_rx_syncstatus,
+	xcvr_native_a10_0_rx_syncstatus_ch1_rx_syncstatus,
+	xcvr_native_a10_0_rx_syncstatus_ch2_rx_syncstatus,
+	xcvr_native_a10_0_rx_syncstatus_ch3_rx_syncstatus,
+	xcvr_native_a10_0_tx_clkout_ch0_clk,
+	xcvr_native_a10_0_tx_clkout_ch1_clk,
+	xcvr_native_a10_0_tx_clkout_ch2_clk,
+	xcvr_native_a10_0_tx_clkout_ch3_clk,
+	xcvr_native_a10_0_tx_coreclkin_ch0_clk,
+	xcvr_native_a10_0_tx_coreclkin_ch1_clk,
+	xcvr_native_a10_0_tx_coreclkin_ch2_clk,
+	xcvr_native_a10_0_tx_coreclkin_ch3_clk,
+	xcvr_native_a10_0_tx_datak_ch0_tx_datak,
+	xcvr_native_a10_0_tx_datak_ch1_tx_datak,
+	xcvr_native_a10_0_tx_datak_ch2_tx_datak,
+	xcvr_native_a10_0_tx_datak_ch3_tx_datak,
+	xcvr_native_a10_0_tx_parallel_data_ch0_tx_parallel_data,
+	xcvr_native_a10_0_tx_parallel_data_ch1_tx_parallel_data,
+	xcvr_native_a10_0_tx_parallel_data_ch2_tx_parallel_data,
+	xcvr_native_a10_0_tx_parallel_data_ch3_tx_parallel_data,
+	xcvr_native_a10_0_tx_serial_data_ch0_tx_serial_data,
+	xcvr_native_a10_0_tx_serial_data_ch1_tx_serial_data,
+	xcvr_native_a10_0_tx_serial_data_ch2_tx_serial_data,
+	xcvr_native_a10_0_tx_serial_data_ch3_tx_serial_data,
+	xcvr_native_a10_0_unused_rx_parallel_data_unused_rx_parallel_data,
+	xcvr_native_a10_0_unused_tx_parallel_data_unused_tx_parallel_data,
+	xcvr_reset_control_0_clock_clk,
+	xcvr_reset_control_0_pll_select_pll_select,
+	xcvr_reset_control_0_reset_reset,
+	xcvr_reset_control_0_rx_ready0_rx_ready,
+	xcvr_reset_control_0_rx_ready1_rx_ready,
+	xcvr_reset_control_0_rx_ready2_rx_ready,
+	xcvr_reset_control_0_rx_ready3_rx_ready,
+	xcvr_reset_control_0_tx_ready0_tx_ready,
+	xcvr_reset_control_0_tx_ready1_tx_ready,
+	xcvr_reset_control_0_tx_ready2_tx_ready,
+	xcvr_reset_control_0_tx_ready3_tx_ready);	
+
+	input		clk_clk;
+	input		reset_reset_n;
+	output		xcvr_native_a10_0_rx_clkout_ch0_clk;
+	output		xcvr_native_a10_0_rx_clkout_ch1_clk;
+	output		xcvr_native_a10_0_rx_clkout_ch2_clk;
+	output		xcvr_native_a10_0_rx_clkout_ch3_clk;
+	input		xcvr_native_a10_0_rx_coreclkin_ch0_clk;
+	input		xcvr_native_a10_0_rx_coreclkin_ch1_clk;
+	input		xcvr_native_a10_0_rx_coreclkin_ch2_clk;
+	input		xcvr_native_a10_0_rx_coreclkin_ch3_clk;
+	output	[1:0]	xcvr_native_a10_0_rx_datak_ch0_rx_datak;
+	output	[1:0]	xcvr_native_a10_0_rx_datak_ch1_rx_datak;
+	output	[1:0]	xcvr_native_a10_0_rx_datak_ch2_rx_datak;
+	output	[1:0]	xcvr_native_a10_0_rx_datak_ch3_rx_datak;
+	output	[1:0]	xcvr_native_a10_0_rx_disperr_ch0_rx_disperr;
+	output	[1:0]	xcvr_native_a10_0_rx_disperr_ch1_rx_disperr;
+	output	[1:0]	xcvr_native_a10_0_rx_disperr_ch2_rx_disperr;
+	output	[1:0]	xcvr_native_a10_0_rx_disperr_ch3_rx_disperr;
+	output	[1:0]	xcvr_native_a10_0_rx_errdetect_ch0_rx_errdetect;
+	output	[1:0]	xcvr_native_a10_0_rx_errdetect_ch1_rx_errdetect;
+	output	[1:0]	xcvr_native_a10_0_rx_errdetect_ch2_rx_errdetect;
+	output	[1:0]	xcvr_native_a10_0_rx_errdetect_ch3_rx_errdetect;
+	output	[15:0]	xcvr_native_a10_0_rx_parallel_data_ch0_rx_parallel_data;
+	output	[15:0]	xcvr_native_a10_0_rx_parallel_data_ch1_rx_parallel_data;
+	output	[15:0]	xcvr_native_a10_0_rx_parallel_data_ch2_rx_parallel_data;
+	output	[15:0]	xcvr_native_a10_0_rx_parallel_data_ch3_rx_parallel_data;
+	output	[1:0]	xcvr_native_a10_0_rx_patterndetect_ch0_rx_patterndetect;
+	output	[1:0]	xcvr_native_a10_0_rx_patterndetect_ch1_rx_patterndetect;
+	output	[1:0]	xcvr_native_a10_0_rx_patterndetect_ch2_rx_patterndetect;
+	output	[1:0]	xcvr_native_a10_0_rx_patterndetect_ch3_rx_patterndetect;
+	output	[1:0]	xcvr_native_a10_0_rx_runningdisp_ch0_rx_runningdisp;
+	output	[1:0]	xcvr_native_a10_0_rx_runningdisp_ch1_rx_runningdisp;
+	output	[1:0]	xcvr_native_a10_0_rx_runningdisp_ch2_rx_runningdisp;
+	output	[1:0]	xcvr_native_a10_0_rx_runningdisp_ch3_rx_runningdisp;
+	input		xcvr_native_a10_0_rx_serial_data_ch0_rx_serial_data;
+	input		xcvr_native_a10_0_rx_serial_data_ch1_rx_serial_data;
+	input		xcvr_native_a10_0_rx_serial_data_ch2_rx_serial_data;
+	input		xcvr_native_a10_0_rx_serial_data_ch3_rx_serial_data;
+	input		xcvr_native_a10_0_rx_seriallpbken_ch0_rx_seriallpbken;
+	input		xcvr_native_a10_0_rx_seriallpbken_ch1_rx_seriallpbken;
+	input		xcvr_native_a10_0_rx_seriallpbken_ch2_rx_seriallpbken;
+	input		xcvr_native_a10_0_rx_seriallpbken_ch3_rx_seriallpbken;
+	input		xcvr_native_a10_0_rx_std_wa_patternalign_ch0_rx_std_wa_patternalign;
+	input		xcvr_native_a10_0_rx_std_wa_patternalign_ch1_rx_std_wa_patternalign;
+	input		xcvr_native_a10_0_rx_std_wa_patternalign_ch2_rx_std_wa_patternalign;
+	input		xcvr_native_a10_0_rx_std_wa_patternalign_ch3_rx_std_wa_patternalign;
+	output	[1:0]	xcvr_native_a10_0_rx_syncstatus_ch0_rx_syncstatus;
+	output	[1:0]	xcvr_native_a10_0_rx_syncstatus_ch1_rx_syncstatus;
+	output	[1:0]	xcvr_native_a10_0_rx_syncstatus_ch2_rx_syncstatus;
+	output	[1:0]	xcvr_native_a10_0_rx_syncstatus_ch3_rx_syncstatus;
+	output		xcvr_native_a10_0_tx_clkout_ch0_clk;
+	output		xcvr_native_a10_0_tx_clkout_ch1_clk;
+	output		xcvr_native_a10_0_tx_clkout_ch2_clk;
+	output		xcvr_native_a10_0_tx_clkout_ch3_clk;
+	input		xcvr_native_a10_0_tx_coreclkin_ch0_clk;
+	input		xcvr_native_a10_0_tx_coreclkin_ch1_clk;
+	input		xcvr_native_a10_0_tx_coreclkin_ch2_clk;
+	input		xcvr_native_a10_0_tx_coreclkin_ch3_clk;
+	input	[1:0]	xcvr_native_a10_0_tx_datak_ch0_tx_datak;
+	input	[1:0]	xcvr_native_a10_0_tx_datak_ch1_tx_datak;
+	input	[1:0]	xcvr_native_a10_0_tx_datak_ch2_tx_datak;
+	input	[1:0]	xcvr_native_a10_0_tx_datak_ch3_tx_datak;
+	input	[15:0]	xcvr_native_a10_0_tx_parallel_data_ch0_tx_parallel_data;
+	input	[15:0]	xcvr_native_a10_0_tx_parallel_data_ch1_tx_parallel_data;
+	input	[15:0]	xcvr_native_a10_0_tx_parallel_data_ch2_tx_parallel_data;
+	input	[15:0]	xcvr_native_a10_0_tx_parallel_data_ch3_tx_parallel_data;
+	output		xcvr_native_a10_0_tx_serial_data_ch0_tx_serial_data;
+	output		xcvr_native_a10_0_tx_serial_data_ch1_tx_serial_data;
+	output		xcvr_native_a10_0_tx_serial_data_ch2_tx_serial_data;
+	output		xcvr_native_a10_0_tx_serial_data_ch3_tx_serial_data;
+	output	[399:0]	xcvr_native_a10_0_unused_rx_parallel_data_unused_rx_parallel_data;
+	input	[439:0]	xcvr_native_a10_0_unused_tx_parallel_data_unused_tx_parallel_data;
+	input		xcvr_reset_control_0_clock_clk;
+	input	[0:0]	xcvr_reset_control_0_pll_select_pll_select;
+	input		xcvr_reset_control_0_reset_reset;
+	output		xcvr_reset_control_0_rx_ready0_rx_ready;
+	output		xcvr_reset_control_0_rx_ready1_rx_ready;
+	output		xcvr_reset_control_0_rx_ready2_rx_ready;
+	output		xcvr_reset_control_0_rx_ready3_rx_ready;
+	output		xcvr_reset_control_0_tx_ready0_tx_ready;
+	output		xcvr_reset_control_0_tx_ready1_tx_ready;
+	output		xcvr_reset_control_0_tx_ready2_tx_ready;
+	output		xcvr_reset_control_0_tx_ready3_tx_ready;
+endmodule

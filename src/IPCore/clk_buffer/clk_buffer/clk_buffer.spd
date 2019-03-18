@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altclkctrl_181/sim/clk_buffer_altclkctrl_181_4ev4gqi.vhd"
+   type="VHDL"
+   library="clk_buffer_altclkctrl_181" />
+ <file path="sim/clk_buffer.vhd" type="VHDL" hasInlineConfiguration="true" />
+ <topLevel name="clk_buffer" />
+ <deviceFamily name="arria10" />
+</simPackage>

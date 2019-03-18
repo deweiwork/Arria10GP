@@ -1,0 +1,23 @@
+IP Ports Diff Report for xcvr_8b10b
+Mon May  7 22:00:50 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++---------------------------------------------------------------------+
+; IP Information                                                      ;
++----------------------+----------------------------------------------+
+; IP Variation Name    ; xcvr_8b10b                                   ;
+; Prior Version        ; ACDS_v17.1                                   ;
+; New Version          ; ACDS_v18.0                                   ;
+; New File             ; XCVR_Modules/xcvr_8B10B/synth/xcvr_8B10B.vhd ;
+; Has Port Differences ; No                                           ;
++----------------------+----------------------------------------------+
+
+

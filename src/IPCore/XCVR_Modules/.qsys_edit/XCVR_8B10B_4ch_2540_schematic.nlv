@@ -1,0 +1,122 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst XCVR_8B10B_4ch_2540.xcvr_atx_pll_a10_0 -pg 1 -lvl 2 -y 110
+preplace inst XCVR_8B10B_4ch_2540.xcvr_reset_control_0 -pg 1 -lvl 3 -y 170
+preplace inst XCVR_8B10B_4ch_2540.clk_0 -pg 1 -lvl 1 -y 230
+preplace inst XCVR_8B10B_4ch_2540.xcvr_native_a10_0 -pg 1 -lvl 3 -y 1030
+preplace inst XCVR_8B10B_4ch_2540 -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_datak_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_datak_ch1) 1 0 3 NJ 2520 NJ 2520 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_errdetect_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_errdetect_ch2) 1 0 3 NJ 1580 NJ 1580 NJ
+preplace netloc FAN_OUT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)xcvr_atx_pll_a10_0.tx_serial_clk,(SLAVE)xcvr_native_a10_0.tx_serial_clk0_ch1,(SLAVE)xcvr_native_a10_0.tx_serial_clk0_ch0,(SLAVE)xcvr_native_a10_0.tx_serial_clk0_ch3,(SLAVE)xcvr_native_a10_0.tx_serial_clk0_ch2) 1 2 1 690
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.pll_powerdown0,(SLAVE)xcvr_atx_pll_a10_0.pll_powerdown) 1 1 2 450 260 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_rx_ready2,(SLAVE)xcvr_reset_control_0.rx_ready2) 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)xcvr_native_a10_0.tx_clkout_ch1,(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_clkout_ch1) 1 3 1 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.pll_cal_busy0,(SLAVE)xcvr_atx_pll_a10_0.pll_cal_busy) 1 1 2 430 240 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_digitalreset_ch2,(SLAVE)xcvr_reset_control_0.tx_digitalreset2) 1 2 1 1390
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_disperr_ch0,(SLAVE)xcvr_native_a10_0.rx_disperr_ch0) 1 0 3 NJ 1460 NJ 1460 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_clkout_ch1,(MASTER)xcvr_native_a10_0.rx_clkout_ch1) 1 3 1 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_clkout_ch2,(MASTER)xcvr_native_a10_0.tx_clkout_ch2) 1 3 1 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_seriallpbken_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_seriallpbken_ch0) 1 0 3 NJ 2100 NJ 2100 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_serial_data_ch2,(SLAVE)xcvr_native_a10_0.rx_serial_data_ch2) 1 0 3 NJ 2060 NJ 2060 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_parallel_data_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_parallel_data_ch0) 1 0 3 NJ 2660 NJ 2660 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_seriallpbken_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_seriallpbken_ch3) 1 0 3 NJ 2160 NJ 2160 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_is_lockedtodata_ch2,(SLAVE)xcvr_reset_control_0.rx_is_lockedtodata2) 1 2 1 1150
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_parallel_data_ch3,(SLAVE)xcvr_native_a10_0.rx_parallel_data_ch3) 1 0 3 NJ 1840 NJ 1840 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_coreclkin_ch0,(SLAVE)xcvr_native_a10_0.rx_coreclkin_ch0) 1 0 3 NJ 40 NJ 40 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_parallel_data_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_parallel_data_ch1) 1 0 3 NJ 1800 NJ 1800 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_ready0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_tx_ready0) 1 0 3 NJ 1000 NJ 1000 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_coreclkin_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_coreclkin_ch3) 1 0 3 NJ 2480 NJ 2480 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_digitalreset0,(SLAVE)xcvr_native_a10_0.rx_digitalreset_ch0) 1 2 1 1030
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_cal_busy2,(SLAVE)xcvr_native_a10_0.tx_cal_busy_ch2) 1 2 1 1310
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_seriallpbken_ch1,(SLAVE)xcvr_native_a10_0.rx_seriallpbken_ch1) 1 0 3 NJ 2120 NJ 2120 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)XCVR_8B10B_4ch_2540.reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_analogreset1,(SLAVE)xcvr_native_a10_0.rx_analogreset_ch1) 1 2 1 890
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_serial_data_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_serial_data_ch2) 1 0 3 NJ 2860 NJ 2860 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_ready2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_tx_ready2) 1 0 3 NJ 1020 NJ 1020 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_serial_data_ch0,(SLAVE)xcvr_native_a10_0.rx_serial_data_ch0) 1 0 3 NJ 2020 NJ 2020 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_patterndetect_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_patterndetect_ch1) 1 0 3 NJ 1880 NJ 1880 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_clkout_ch2,(MASTER)xcvr_native_a10_0.rx_clkout_ch2) 1 3 1 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_is_lockedtoref_ch1,(SLAVE)xcvr_native_a10_0.rx_is_lockedtoref_ch1) 1 0 3 NJ 1720 NJ 1720 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)clk_0.clk_reset,(SLAVE)xcvr_reset_control_0.reset) 1 1 2 410 280 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_errdetect_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_errdetect_ch0) 1 0 3 NJ 1540 NJ 1540 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_cal_busy2,(SLAVE)xcvr_native_a10_0.rx_cal_busy_ch2) 1 2 1 990
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_coreclkin_ch3,(SLAVE)xcvr_native_a10_0.rx_coreclkin_ch3) 1 0 3 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_runningdisp_ch2,(SLAVE)xcvr_native_a10_0.rx_runningdisp_ch2) 1 0 3 NJ 1980 NJ 1980 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_cal_busy0,(SLAVE)xcvr_native_a10_0.rx_cal_busy_ch0) 1 2 1 950
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_cal_busy_ch0,(SLAVE)xcvr_reset_control_0.tx_cal_busy0) 1 2 1 1270
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_runningdisp_ch0,(SLAVE)xcvr_native_a10_0.rx_runningdisp_ch0) 1 0 3 NJ 1940 NJ 1940 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_coreclkin_ch1,(SLAVE)xcvr_native_a10_0.rx_coreclkin_ch1) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_cal_busy3,(SLAVE)xcvr_native_a10_0.tx_cal_busy_ch3) 1 2 1 1330
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_disperr_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_disperr_ch1) 1 0 3 NJ 1480 NJ 1480 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_analogreset0,(SLAVE)xcvr_native_a10_0.tx_analogreset_ch0) 1 2 1 1190
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_cal_busy1,(SLAVE)xcvr_native_a10_0.tx_cal_busy_ch1) 1 2 1 1290
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_analogreset3,(SLAVE)xcvr_native_a10_0.rx_analogreset_ch3) 1 2 1 930
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_analogreset0,(SLAVE)xcvr_native_a10_0.rx_analogreset_ch0) 1 2 1 870
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_serial_data_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_serial_data_ch3) 1 0 3 NJ 2880 NJ 2880 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.pll_select,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_pll_select) 1 0 3 NJ 300 NJ 300 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_coreclkin_ch1,(SLAVE)xcvr_native_a10_0.tx_coreclkin_ch1) 1 0 3 NJ 2440 NJ 2440 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_errdetect_ch3,(SLAVE)xcvr_native_a10_0.rx_errdetect_ch3) 1 0 3 NJ 1600 NJ 1600 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_datak_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_datak_ch0) 1 0 3 NJ 2500 NJ 2500 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_datak_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_datak_ch1) 1 0 3 NJ 1320 NJ 1320 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_analogreset_ch2,(SLAVE)xcvr_reset_control_0.tx_analogreset2) 1 2 1 1230
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_coreclkin_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_coreclkin_ch0) 1 0 3 NJ 2420 NJ 2420 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)xcvr_native_a10_0.rx_clkout_ch3,(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_clkout_ch3) 1 3 1 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_is_lockedtodata3,(SLAVE)xcvr_native_a10_0.rx_is_lockedtodata_ch3) 1 2 1 1170
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_digitalreset3,(SLAVE)xcvr_native_a10_0.tx_digitalreset_ch3) 1 2 1 1410
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_analogreset_ch1,(SLAVE)xcvr_reset_control_0.tx_analogreset1) 1 2 1 1210
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_analogreset3,(SLAVE)xcvr_native_a10_0.tx_analogreset_ch3) 1 2 1 1250
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_rx_ready1,(SLAVE)xcvr_reset_control_0.rx_ready1) 1 0 3 NJ 640 NJ 640 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_datak_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_datak_ch3) 1 0 3 NJ 2560 NJ 2560 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_serial_data_ch3,(SLAVE)xcvr_native_a10_0.rx_serial_data_ch3) 1 0 3 NJ 2080 NJ 2080 NJ
+preplace netloc FAN_OUT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)clk_0.clk,(SLAVE)xcvr_reset_control_0.clock,(SLAVE)xcvr_atx_pll_a10_0.pll_refclk0,(SLAVE)xcvr_native_a10_0.rx_cdr_refclk0) 1 1 2 410 100 790
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_datak_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_datak_ch2) 1 0 3 NJ 1340 NJ 1340 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_atx_pll_a10_0.pll_locked,(SLAVE)xcvr_reset_control_0.pll_locked0) 1 1 2 470 220 N
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_syncstatus_ch2,(SLAVE)xcvr_native_a10_0.rx_syncstatus_ch2) 1 0 3 NJ 2220 NJ 2220 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_seriallpbken_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_seriallpbken_ch2) 1 0 3 NJ 2140 NJ 2140 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_patterndetect_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_patterndetect_ch2) 1 0 3 NJ 1900 NJ 1900 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_serial_data_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_serial_data_ch0) 1 0 3 NJ 2820 NJ 2820 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_parallel_data_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_parallel_data_ch2) 1 0 3 NJ 2700 NJ 2700 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_parallel_data_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_parallel_data_ch1) 1 0 3 NJ 2680 NJ 2680 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_analogreset_ch2,(SLAVE)xcvr_reset_control_0.rx_analogreset2) 1 2 1 910
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_rx_ready3,(SLAVE)xcvr_reset_control_0.rx_ready3) 1 0 3 NJ 680 NJ 680 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_serial_data_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_serial_data_ch1) 1 0 3 NJ 2840 NJ 2840 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_disperr_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_disperr_ch2) 1 0 3 NJ 1500 NJ 1500 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_is_lockedtodata_ch0,(SLAVE)xcvr_reset_control_0.rx_is_lockedtodata0) 1 2 1 1110
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_serial_data_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_serial_data_ch1) 1 0 3 NJ 2040 NJ 2040 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_clkout_ch0,(MASTER)xcvr_native_a10_0.tx_clkout_ch0) 1 3 1 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_parallel_data_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_parallel_data_ch2) 1 0 3 NJ 1820 NJ 1820 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_digitalreset3,(SLAVE)xcvr_native_a10_0.rx_digitalreset_ch3) 1 2 1 1090
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_parallel_data_ch3,(SLAVE)xcvr_native_a10_0.tx_parallel_data_ch3) 1 0 3 NJ 2720 NJ 2720 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_syncstatus_ch3,(SLAVE)xcvr_native_a10_0.rx_syncstatus_ch3) 1 0 3 NJ 2240 NJ 2240 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_runningdisp_ch3,(SLAVE)xcvr_native_a10_0.rx_runningdisp_ch3) 1 0 3 NJ 2000 NJ 2000 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_is_lockedtoref_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_is_lockedtoref_ch0) 1 0 3 NJ 1700 NJ 1700 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_tx_ready1,(SLAVE)xcvr_reset_control_0.tx_ready1) 1 0 3 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_ready0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_rx_ready0) 1 0 3 NJ 620 NJ 620 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_digitalreset2,(SLAVE)xcvr_native_a10_0.rx_digitalreset_ch2) 1 2 1 1070
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_patterndetect_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_patterndetect_ch0) 1 0 3 NJ 1860 NJ 1860 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_syncstatus_ch0,(SLAVE)xcvr_native_a10_0.rx_syncstatus_ch0) 1 0 3 NJ 2180 NJ 2180 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_clkout_ch0,(MASTER)xcvr_native_a10_0.rx_clkout_ch0) 1 3 1 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_runningdisp_ch1,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_runningdisp_ch1) 1 0 3 NJ 1960 NJ 1960 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_is_lockedtodata_ch1,(SLAVE)xcvr_reset_control_0.rx_is_lockedtodata1) 1 2 1 1130
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_disperr_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_disperr_ch3) 1 0 3 NJ 1520 NJ 1520 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_datak_ch0,(SLAVE)xcvr_native_a10_0.rx_datak_ch0) 1 0 3 NJ 1300 NJ 1300 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_patterndetect_ch3,(SLAVE)xcvr_native_a10_0.rx_patterndetect_ch3) 1 0 3 NJ 1920 NJ 1920 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_syncstatus_ch1,(SLAVE)xcvr_native_a10_0.rx_syncstatus_ch1) 1 0 3 NJ 2200 NJ 2200 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_digitalreset_ch1,(SLAVE)xcvr_reset_control_0.rx_digitalreset1) 1 2 1 1050
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_coreclkin_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_coreclkin_ch2) 1 0 3 NJ 1260 NJ 1260 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_cal_busy_ch1,(SLAVE)xcvr_reset_control_0.rx_cal_busy1) 1 2 1 970
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(MASTER)xcvr_native_a10_0.tx_clkout_ch3,(MASTER)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_clkout_ch3) 1 3 1 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.rx_cal_busy3,(SLAVE)xcvr_native_a10_0.rx_cal_busy_ch3) 1 2 1 1010
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_datak_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_datak_ch3) 1 0 3 NJ 1360 NJ 1360 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.tx_digitalreset_ch0,(SLAVE)xcvr_reset_control_0.tx_digitalreset0) 1 2 1 1350
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_parallel_data_ch0,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_parallel_data_ch0) 1 0 3 NJ 1780 NJ 1780 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_reset_control_0_tx_ready3,(SLAVE)xcvr_reset_control_0.tx_ready3) 1 0 3 NJ 980 NJ 980 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_errdetect_ch1,(SLAVE)xcvr_native_a10_0.rx_errdetect_ch1) 1 0 3 NJ 1560 NJ 1560 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_is_lockedtoref_ch3,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_is_lockedtoref_ch3) 1 0 3 NJ 1760 NJ 1760 NJ
+preplace netloc POINT_TO_POINT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_reset_control_0.tx_digitalreset1,(SLAVE)xcvr_native_a10_0.tx_digitalreset_ch1) 1 2 1 1370
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_datak_ch2,(SLAVE)xcvr_native_a10_0.tx_datak_ch2) 1 0 3 NJ 2540 NJ 2540 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)xcvr_native_a10_0.rx_is_lockedtoref_ch2,(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_rx_is_lockedtoref_ch2) 1 0 3 NJ 1740 NJ 1740 NJ
+preplace netloc EXPORT<net_container>XCVR_8B10B_4ch_2540</net_container>(SLAVE)XCVR_8B10B_4ch_2540.xcvr_native_a10_0_tx_coreclkin_ch2,(SLAVE)xcvr_native_a10_0.tx_coreclkin_ch2) 1 0 3 NJ 2460 NJ 2460 NJ
+levelinfo -pg 1 0 200 1910
+levelinfo -hier XCVR_8B10B_4ch_2540 210 240 500 1440 1690

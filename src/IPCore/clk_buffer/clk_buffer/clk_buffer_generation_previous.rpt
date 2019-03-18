@@ -1,0 +1,93 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer --family="Arria 10" --part=10AX066N3F40E2SG
+Progress: Loading clk_buffer/clk_buffer.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 18.0]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: clk_buffer.altclkctrl_0: Targeting device family: Arria 10.
+: clk_buffer.altclkctrl_0: Selecting AUTO allows the compiler to pick the best clock buffer to use, while other values restrict usage to only the given clock buffer.
+: clk_buffer.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added. 
+Info: clk_buffer: "Transforming system: clk_buffer"
+Info: clk_buffer: Running transform generation_view_transform
+Info: clk_buffer: Running transform generation_view_transform took 0.000s
+Info: altclkctrl_0: Running transform generation_view_transform
+Info: altclkctrl_0: Running transform generation_view_transform took 0.001s
+Info: clk_buffer: Running transform merlin_avalon_transform
+Info: clk_buffer: Running transform merlin_avalon_transform took 0.038s
+Info: clk_buffer: "Naming system components in system: clk_buffer"
+Info: clk_buffer: "Processing generation queue"
+Info: clk_buffer: "Generating: clk_buffer"
+Info: clk_buffer: "Generating: clk_buffer_altclkctrl_180_cdcq2ta"
+Info: altclkctrl_0: Generating top-level entity clk_buffer_altclkctrl_180_cdcq2ta.
+Info: clk_buffer: Done "clk_buffer" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/clk_buffer.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/clk_buffer.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer.qsys --block-symbol-file --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer --family="Arria 10" --part=10AX066N3F40E2SG
+Progress: Loading clk_buffer/clk_buffer.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 18.0]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: clk_buffer.altclkctrl_0: Targeting device family: Arria 10.
+: clk_buffer.altclkctrl_0: Selecting AUTO allows the compiler to pick the best clock buffer to use, while other values restrict usage to only the given clock buffer.
+: clk_buffer.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added. 
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer.qsys --synthesis=VHDL --greybox --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer --family="Arria 10" --part=10AX066N3F40E2SG
+Progress: Loading clk_buffer/clk_buffer.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 18.0]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: clk_buffer.altclkctrl_0: Targeting device family: Arria 10.
+: clk_buffer.altclkctrl_0: Selecting AUTO allows the compiler to pick the best clock buffer to use, while other values restrict usage to only the given clock buffer.
+: clk_buffer.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added. 
+Info: clk_buffer: "Transforming system: clk_buffer"
+Info: clk_buffer: Running transform generation_view_transform
+Info: clk_buffer: Running transform generation_view_transform took 0.000s
+Info: altclkctrl_0: Running transform generation_view_transform
+Info: altclkctrl_0: Running transform generation_view_transform took 0.000s
+Info: clk_buffer: Running transform merlin_avalon_transform
+Info: clk_buffer: Running transform merlin_avalon_transform took 0.009s
+Info: clk_buffer: "Naming system components in system: clk_buffer"
+Info: clk_buffer: "Processing generation queue"
+Info: clk_buffer: "Generating: clk_buffer"
+Info: clk_buffer: "Generating: clk_buffer_altclkctrl_180_cdcq2ta"
+Info: altclkctrl_0: Generating top-level entity clk_buffer_altclkctrl_180_cdcq2ta.
+Info: clk_buffer: Done "clk_buffer" with 2 modules, 3 files
+Info: Generating third-party timing and resource estimation model ...
+Info: Done generating third-party timing and resource estimation model.
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

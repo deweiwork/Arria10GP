@@ -1,0 +1,88 @@
+	component xcvr_8B10B is
+		port (
+			clk_clk                                                             : in  std_logic                      := 'X';             -- clk
+			reset_reset_n                                                       : in  std_logic                      := 'X';             -- reset_n
+			xcvr_native_a10_0_rx_clkout_ch0_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_rx_clkout_ch1_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_rx_clkout_ch2_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_rx_clkout_ch3_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_rx_coreclkin_ch0_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_rx_coreclkin_ch1_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_rx_coreclkin_ch2_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_rx_coreclkin_ch3_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_rx_datak_ch0_rx_datak                             : out std_logic_vector(1 downto 0);                      -- rx_datak
+			xcvr_native_a10_0_rx_datak_ch1_rx_datak                             : out std_logic_vector(1 downto 0);                      -- rx_datak
+			xcvr_native_a10_0_rx_datak_ch2_rx_datak                             : out std_logic_vector(1 downto 0);                      -- rx_datak
+			xcvr_native_a10_0_rx_datak_ch3_rx_datak                             : out std_logic_vector(1 downto 0);                      -- rx_datak
+			xcvr_native_a10_0_rx_disperr_ch0_rx_disperr                         : out std_logic_vector(1 downto 0);                      -- rx_disperr
+			xcvr_native_a10_0_rx_disperr_ch1_rx_disperr                         : out std_logic_vector(1 downto 0);                      -- rx_disperr
+			xcvr_native_a10_0_rx_disperr_ch2_rx_disperr                         : out std_logic_vector(1 downto 0);                      -- rx_disperr
+			xcvr_native_a10_0_rx_disperr_ch3_rx_disperr                         : out std_logic_vector(1 downto 0);                      -- rx_disperr
+			xcvr_native_a10_0_rx_errdetect_ch0_rx_errdetect                     : out std_logic_vector(1 downto 0);                      -- rx_errdetect
+			xcvr_native_a10_0_rx_errdetect_ch1_rx_errdetect                     : out std_logic_vector(1 downto 0);                      -- rx_errdetect
+			xcvr_native_a10_0_rx_errdetect_ch2_rx_errdetect                     : out std_logic_vector(1 downto 0);                      -- rx_errdetect
+			xcvr_native_a10_0_rx_errdetect_ch3_rx_errdetect                     : out std_logic_vector(1 downto 0);                      -- rx_errdetect
+			xcvr_native_a10_0_rx_parallel_data_ch0_rx_parallel_data             : out std_logic_vector(15 downto 0);                     -- rx_parallel_data
+			xcvr_native_a10_0_rx_parallel_data_ch1_rx_parallel_data             : out std_logic_vector(15 downto 0);                     -- rx_parallel_data
+			xcvr_native_a10_0_rx_parallel_data_ch2_rx_parallel_data             : out std_logic_vector(15 downto 0);                     -- rx_parallel_data
+			xcvr_native_a10_0_rx_parallel_data_ch3_rx_parallel_data             : out std_logic_vector(15 downto 0);                     -- rx_parallel_data
+			xcvr_native_a10_0_rx_patterndetect_ch0_rx_patterndetect             : out std_logic_vector(1 downto 0);                      -- rx_patterndetect
+			xcvr_native_a10_0_rx_patterndetect_ch1_rx_patterndetect             : out std_logic_vector(1 downto 0);                      -- rx_patterndetect
+			xcvr_native_a10_0_rx_patterndetect_ch2_rx_patterndetect             : out std_logic_vector(1 downto 0);                      -- rx_patterndetect
+			xcvr_native_a10_0_rx_patterndetect_ch3_rx_patterndetect             : out std_logic_vector(1 downto 0);                      -- rx_patterndetect
+			xcvr_native_a10_0_rx_runningdisp_ch0_rx_runningdisp                 : out std_logic_vector(1 downto 0);                      -- rx_runningdisp
+			xcvr_native_a10_0_rx_runningdisp_ch1_rx_runningdisp                 : out std_logic_vector(1 downto 0);                      -- rx_runningdisp
+			xcvr_native_a10_0_rx_runningdisp_ch2_rx_runningdisp                 : out std_logic_vector(1 downto 0);                      -- rx_runningdisp
+			xcvr_native_a10_0_rx_runningdisp_ch3_rx_runningdisp                 : out std_logic_vector(1 downto 0);                      -- rx_runningdisp
+			xcvr_native_a10_0_rx_serial_data_ch0_rx_serial_data                 : in  std_logic                      := 'X';             -- rx_serial_data
+			xcvr_native_a10_0_rx_serial_data_ch1_rx_serial_data                 : in  std_logic                      := 'X';             -- rx_serial_data
+			xcvr_native_a10_0_rx_serial_data_ch2_rx_serial_data                 : in  std_logic                      := 'X';             -- rx_serial_data
+			xcvr_native_a10_0_rx_serial_data_ch3_rx_serial_data                 : in  std_logic                      := 'X';             -- rx_serial_data
+			xcvr_native_a10_0_rx_seriallpbken_ch0_rx_seriallpbken               : in  std_logic                      := 'X';             -- rx_seriallpbken
+			xcvr_native_a10_0_rx_seriallpbken_ch1_rx_seriallpbken               : in  std_logic                      := 'X';             -- rx_seriallpbken
+			xcvr_native_a10_0_rx_seriallpbken_ch2_rx_seriallpbken               : in  std_logic                      := 'X';             -- rx_seriallpbken
+			xcvr_native_a10_0_rx_seriallpbken_ch3_rx_seriallpbken               : in  std_logic                      := 'X';             -- rx_seriallpbken
+			xcvr_native_a10_0_rx_std_wa_patternalign_ch0_rx_std_wa_patternalign : in  std_logic                      := 'X';             -- rx_std_wa_patternalign
+			xcvr_native_a10_0_rx_std_wa_patternalign_ch1_rx_std_wa_patternalign : in  std_logic                      := 'X';             -- rx_std_wa_patternalign
+			xcvr_native_a10_0_rx_std_wa_patternalign_ch2_rx_std_wa_patternalign : in  std_logic                      := 'X';             -- rx_std_wa_patternalign
+			xcvr_native_a10_0_rx_std_wa_patternalign_ch3_rx_std_wa_patternalign : in  std_logic                      := 'X';             -- rx_std_wa_patternalign
+			xcvr_native_a10_0_rx_syncstatus_ch0_rx_syncstatus                   : out std_logic_vector(1 downto 0);                      -- rx_syncstatus
+			xcvr_native_a10_0_rx_syncstatus_ch1_rx_syncstatus                   : out std_logic_vector(1 downto 0);                      -- rx_syncstatus
+			xcvr_native_a10_0_rx_syncstatus_ch2_rx_syncstatus                   : out std_logic_vector(1 downto 0);                      -- rx_syncstatus
+			xcvr_native_a10_0_rx_syncstatus_ch3_rx_syncstatus                   : out std_logic_vector(1 downto 0);                      -- rx_syncstatus
+			xcvr_native_a10_0_tx_clkout_ch0_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_tx_clkout_ch1_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_tx_clkout_ch2_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_tx_clkout_ch3_clk                                 : out std_logic;                                         -- clk
+			xcvr_native_a10_0_tx_coreclkin_ch0_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_tx_coreclkin_ch1_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_tx_coreclkin_ch2_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_tx_coreclkin_ch3_clk                              : in  std_logic                      := 'X';             -- clk
+			xcvr_native_a10_0_tx_datak_ch0_tx_datak                             : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- tx_datak
+			xcvr_native_a10_0_tx_datak_ch1_tx_datak                             : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- tx_datak
+			xcvr_native_a10_0_tx_datak_ch2_tx_datak                             : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- tx_datak
+			xcvr_native_a10_0_tx_datak_ch3_tx_datak                             : in  std_logic_vector(1 downto 0)   := (others => 'X'); -- tx_datak
+			xcvr_native_a10_0_tx_parallel_data_ch0_tx_parallel_data             : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- tx_parallel_data
+			xcvr_native_a10_0_tx_parallel_data_ch1_tx_parallel_data             : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- tx_parallel_data
+			xcvr_native_a10_0_tx_parallel_data_ch2_tx_parallel_data             : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- tx_parallel_data
+			xcvr_native_a10_0_tx_parallel_data_ch3_tx_parallel_data             : in  std_logic_vector(15 downto 0)  := (others => 'X'); -- tx_parallel_data
+			xcvr_native_a10_0_tx_serial_data_ch0_tx_serial_data                 : out std_logic;                                         -- tx_serial_data
+			xcvr_native_a10_0_tx_serial_data_ch1_tx_serial_data                 : out std_logic;                                         -- tx_serial_data
+			xcvr_native_a10_0_tx_serial_data_ch2_tx_serial_data                 : out std_logic;                                         -- tx_serial_data
+			xcvr_native_a10_0_tx_serial_data_ch3_tx_serial_data                 : out std_logic;                                         -- tx_serial_data
+			xcvr_native_a10_0_unused_rx_parallel_data_unused_rx_parallel_data   : out std_logic_vector(399 downto 0);                    -- unused_rx_parallel_data
+			xcvr_native_a10_0_unused_tx_parallel_data_unused_tx_parallel_data   : in  std_logic_vector(439 downto 0) := (others => 'X'); -- unused_tx_parallel_data
+			xcvr_reset_control_0_clock_clk                                      : in  std_logic                      := 'X';             -- clk
+			xcvr_reset_control_0_pll_select_pll_select                          : in  std_logic_vector(0 downto 0)   := (others => 'X'); -- pll_select
+			xcvr_reset_control_0_reset_reset                                    : in  std_logic                      := 'X';             -- reset
+			xcvr_reset_control_0_rx_ready0_rx_ready                             : out std_logic;                                         -- rx_ready
+			xcvr_reset_control_0_rx_ready1_rx_ready                             : out std_logic;                                         -- rx_ready
+			xcvr_reset_control_0_rx_ready2_rx_ready                             : out std_logic;                                         -- rx_ready
+			xcvr_reset_control_0_rx_ready3_rx_ready                             : out std_logic;                                         -- rx_ready
+			xcvr_reset_control_0_tx_ready0_tx_ready                             : out std_logic;                                         -- tx_ready
+			xcvr_reset_control_0_tx_ready1_tx_ready                             : out std_logic;                                         -- tx_ready
+			xcvr_reset_control_0_tx_ready2_tx_ready                             : out std_logic;                                         -- tx_ready
+			xcvr_reset_control_0_tx_ready3_tx_ready                             : out std_logic                                          -- tx_ready
+		);
+	end component xcvr_8B10B;
+

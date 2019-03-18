@@ -1,0 +1,209 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B --family="Arria 10" --part=10AX066N3F40E2SG
+Progress: Loading XCVR_Modules/xcvr_8B10B.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 18.1]
+Info: altera_xcvr_atx_pll_a10: NOTE: Modified mcgb tcl package that enables ATX PLL Sharing
+Progress: Parameterizing module xcvr_atx_pll_a10_0
+Progress: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 18.1]
+Progress: Parameterizing module xcvr_native_a10_0
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 18.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: xcvr_8B10B.xcvr_atx_pll_a10_0: For the selected device(10AX066N3F40E2SG), PLL speed grade is 3.
+Info: xcvr_8B10B.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data/control interface for the current configuration only. Dynamic reconfiguration of the data interface cannot be supported. The unused_tx_parallel_data and unused_tx_control ports should be connected to 0.
+Info: xcvr_8B10B.xcvr_native_a10_0: For the selected device(10AX066N3F40E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: xcvr_8B10B.xcvr_native_a10_0: Note - The external TX PLL IP must be configured with an output clock frequency of 1270.0 MHz.
+Info: xcvr_8B10B: "Transforming system: xcvr_8B10B"
+Info: xcvr_8B10B: Running transform generation_view_transform
+Info: xcvr_8B10B: Running transform generation_view_transform took 0.000s
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform took 0.000s
+Info: xcvr_native_a10_0: Running transform generation_view_transform
+Info: xcvr_native_a10_0: Running transform generation_view_transform took 0.000s
+Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: xcvr_8B10B: Running transform merlin_avalon_transform
+Info: xcvr_8B10B: Running transform merlin_avalon_transform took 0.048s
+Info: xcvr_8B10B: "Naming system components in system: xcvr_8B10B"
+Info: xcvr_8B10B: "Processing generation queue"
+Info: xcvr_8B10B: "Generating: xcvr_8B10B"
+Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_atx_pll_a10_181_ubmonnq"
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/twentynm_xcvr_avmm.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_xcvr_avmm.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_resync.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_arbiter.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_arbiter.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/a10_avmm_h.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/altera_xcvr_native_a10_functions_h.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_atx_pll_rcfg_arb.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_atx_pll_rcfg_arb.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_xcvr_atx_pll.sv SYSTEM_VERILOG PATH ../source/a10_xcvr_atx_pll.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_embedded_debug.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_avmm_csr.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_atx_pll_rcfg_arb.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/alt_xcvr_atx_pll_rcfg_arb.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/a10_xcvr_atx_pll.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/a10_xcvr_atx_pll.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/alt_xcvr_pll_embedded_debug.sv MENTOR_SPECIFIC
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source/alt_xcvr_pll_avmm_csr.sv MENTOR_SPECIFIC
+Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_native_a10_181_icgezoa"
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_resync.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/alt_xcvr_arbiter.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_arbiter.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pcs.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pcs.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pma.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pma.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_native.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_native.sv
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_pcs.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_pcs.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_pma.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_pma.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_xcvr_avmm.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_xcvr_avmm.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_xcvr_native.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor/twentynm_xcvr_native.sv MENTOR_SPECIFIC
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_a10_functions_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ..//a10_avmm_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_pipe_retry.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_pipe_retry.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_avmm_csr.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_avmm_csr.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_prbs_accum.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_prbs_accum.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_odi_accel.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_odi_accel.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_rcfg_arb.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_rcfg_arb.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_params_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/altera_xcvr_native_pcie_dfe_params_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_commands_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_commands_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_functions_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_functions_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_program.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_program.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_cpu.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_cpu.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_master.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_master.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_ip.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/altera_xcvr_native_pcie_dfe_ip.sv
+Info: xcvr_8B10B: "Generating: altera_xcvr_reset_control"
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/altera_xcvr_functions.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../altera_xcvr_generic/mentor/altera_xcvr_functions.sv MENTOR_SPECIFIC
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../altera_xcvr_generic/mentor/ctrl/alt_xcvr_resync.sv MENTOR_SPECIFIC
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/altera_xcvr_reset_control.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/altera_xcvr_reset_control.sv MENTOR_SPECIFIC
+Info: xcvr_reset_control_0: add_fileset_file ./mentor/alt_xcvr_reset_counter.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/alt_xcvr_reset_counter.sv MENTOR_SPECIFIC
+Info: xcvr_8B10B: Done "xcvr_8B10B" with 4 modules, 71 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/xcvr_8B10B.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/xcvr_8B10B.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	4 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B/sim/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B.qsys --block-symbol-file --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B --family="Arria 10" --part=10AX066N3F40E2SG
+Progress: Loading XCVR_Modules/xcvr_8B10B.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 18.1]
+Progress: Parameterizing module xcvr_atx_pll_a10_0
+Progress: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 18.1]
+Progress: Parameterizing module xcvr_native_a10_0
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 18.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: xcvr_8B10B.xcvr_atx_pll_a10_0: For the selected device(10AX066N3F40E2SG), PLL speed grade is 3.
+Info: xcvr_8B10B.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data/control interface for the current configuration only. Dynamic reconfiguration of the data interface cannot be supported. The unused_tx_parallel_data and unused_tx_control ports should be connected to 0.
+Info: xcvr_8B10B.xcvr_native_a10_0: For the selected device(10AX066N3F40E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: xcvr_8B10B.xcvr_native_a10_0: Note - The external TX PLL IP must be configured with an output clock frequency of 1270.0 MHz.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B.qsys --synthesis=VHDL --greybox --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B --family="Arria 10" --part=10AX066N3F40E2SG
+Progress: Loading XCVR_Modules/xcvr_8B10B.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 18.1]
+Progress: Parameterizing module xcvr_atx_pll_a10_0
+Progress: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 18.1]
+Progress: Parameterizing module xcvr_native_a10_0
+Progress: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 18.1]
+Progress: Parameterizing module xcvr_reset_control_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: xcvr_8B10B.xcvr_atx_pll_a10_0: For the selected device(10AX066N3F40E2SG), PLL speed grade is 3.
+Info: xcvr_8B10B.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data/control interface for the current configuration only. Dynamic reconfiguration of the data interface cannot be supported. The unused_tx_parallel_data and unused_tx_control ports should be connected to 0.
+Info: xcvr_8B10B.xcvr_native_a10_0: For the selected device(10AX066N3F40E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: xcvr_8B10B.xcvr_native_a10_0: Note - The external TX PLL IP must be configured with an output clock frequency of 1270.0 MHz.
+Info: xcvr_8B10B: "Transforming system: xcvr_8B10B"
+Info: xcvr_8B10B: Running transform generation_view_transform
+Info: xcvr_8B10B: Running transform generation_view_transform took 0.000s
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform
+Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform took 0.000s
+Info: xcvr_native_a10_0: Running transform generation_view_transform
+Info: xcvr_native_a10_0: Running transform generation_view_transform took 0.000s
+Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: xcvr_8B10B: Running transform merlin_avalon_transform
+Info: xcvr_8B10B: Running transform merlin_avalon_transform took 0.019s
+Info: xcvr_8B10B: "Naming system components in system: xcvr_8B10B"
+Info: xcvr_8B10B: "Processing generation queue"
+Info: xcvr_8B10B: "Generating: xcvr_8B10B"
+Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_atx_pll_a10_181_ubmonnq"
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/a10_avmm_h.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi/altera_xcvr_native_a10_functions_h.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_atx_pll_rcfg_arb.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_atx_pll_rcfg_arb.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_xcvr_atx_pll.sv SYSTEM_VERILOG PATH ../source/a10_xcvr_atx_pll.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_embedded_debug.sv
+Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../source/alt_xcvr_pll_avmm_csr.sv
+Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_native_a10_181_icgezoa"
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pcs.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pcs.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pma.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_pma.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv
+Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_native.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_native.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_a10_functions_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ..//a10_avmm_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_pipe_retry.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_pipe_retry.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_avmm_csr.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_avmm_csr.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_prbs_accum.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_prbs_accum.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_odi_accel.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_odi_accel.sv
+Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_rcfg_arb.sv SYSTEM_VERILOG PATH ..//alt_xcvr_native_rcfg_arb.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_false_paths.sdc SDC PATH ..//altera_xcvr_native_a10_false_paths.sdc
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_params_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/altera_xcvr_native_pcie_dfe_params_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_commands_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_commands_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_functions_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_functions_h.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_program.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_program.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_cpu.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_cpu.sv
+Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_master.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/pcie_mgmt_master.sv
+Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_ip.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip/altera_xcvr_native_pcie_dfe_ip.sv
+Info: xcvr_8B10B: "Generating: altera_xcvr_reset_control"
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/altera_xcvr_functions.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv
+Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ..//altera_xcvr_reset_control.sv
+Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ..//alt_xcvr_reset_counter.sv
+Info: xcvr_8B10B: Done "xcvr_8B10B" with 4 modules, 46 files
+Info: Generating third-party timing and resource estimation model ...
+Info: Done generating third-party timing and resource estimation model.
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

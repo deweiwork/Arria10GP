@@ -1,0 +1,92 @@
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|reset_ctrl:rst_ctrl|lane_up_status
+Name lane_up_status.now_xcvr_init_done lane_up_status.pre_lane_up lane_up_status.comma_align lane_up_status.wait_locked lane_up_status.power_on 
+lane_up_status.power_on 0 0 0 0 0 
+lane_up_status.wait_locked 0 0 0 1 1 
+lane_up_status.comma_align 0 0 1 0 1 
+lane_up_status.pre_lane_up 0 1 0 0 1 
+lane_up_status.now_xcvr_init_done 1 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_23|syncing_status
+Name syncing_status.sync_done syncing_status.estimate_distance syncing_status.wait_1st_sync_pattern 
+syncing_status.wait_1st_sync_pattern 0 0 0 
+syncing_status.estimate_distance 0 1 1 
+syncing_status.sync_done 1 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status
+Name syncing_status.sync_done syncing_status.estimate_distance syncing_status.wait_1st_sync_pattern 
+syncing_status.wait_1st_sync_pattern 0 0 0 
+syncing_status.estimate_distance 0 1 1 
+syncing_status.sync_done 1 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:3:traffic|rx_status
+Name rx_status.wait_client_data rx_status.sync_align rx_status.wait_pattern_B rx_status.wait_pattern_k1 rx_status.wait_pattern_k0 rx_status.idle 
+rx_status.idle 0 0 0 0 0 0 
+rx_status.wait_pattern_k0 0 0 0 0 1 1 
+rx_status.wait_pattern_k1 0 0 0 1 0 1 
+rx_status.wait_pattern_B 0 0 1 0 0 1 
+rx_status.sync_align 0 1 0 0 0 1 
+rx_status.wait_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:3:traffic|tx_status
+Name tx_status.sent_client_data tx_status.sent_sync_patterns tx_status.sent_pattern_B_wait_rx_obtain tx_status.sent_pattern_k1_wait_rx_obtain tx_status.sent_pattern_k0_wait_rx_obtain tx_status.idle 
+tx_status.idle 0 0 0 0 0 0 
+tx_status.sent_pattern_k0_wait_rx_obtain 0 0 0 0 1 1 
+tx_status.sent_pattern_k1_wait_rx_obtain 0 0 0 1 0 1 
+tx_status.sent_pattern_B_wait_rx_obtain 0 0 1 0 0 1 
+tx_status.sent_sync_patterns 0 1 0 0 0 1 
+tx_status.sent_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:2:traffic|rx_status
+Name rx_status.wait_client_data rx_status.sync_align rx_status.wait_pattern_B rx_status.wait_pattern_k1 rx_status.wait_pattern_k0 rx_status.idle 
+rx_status.idle 0 0 0 0 0 0 
+rx_status.wait_pattern_k0 0 0 0 0 1 1 
+rx_status.wait_pattern_k1 0 0 0 1 0 1 
+rx_status.wait_pattern_B 0 0 1 0 0 1 
+rx_status.sync_align 0 1 0 0 0 1 
+rx_status.wait_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:2:traffic|tx_status
+Name tx_status.sent_client_data tx_status.sent_sync_patterns tx_status.sent_pattern_B_wait_rx_obtain tx_status.sent_pattern_k1_wait_rx_obtain tx_status.sent_pattern_k0_wait_rx_obtain tx_status.idle 
+tx_status.idle 0 0 0 0 0 0 
+tx_status.sent_pattern_k0_wait_rx_obtain 0 0 0 0 1 1 
+tx_status.sent_pattern_k1_wait_rx_obtain 0 0 0 1 0 1 
+tx_status.sent_pattern_B_wait_rx_obtain 0 0 1 0 0 1 
+tx_status.sent_sync_patterns 0 1 0 0 0 1 
+tx_status.sent_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:1:traffic|rx_status
+Name rx_status.wait_client_data rx_status.sync_align rx_status.wait_pattern_B rx_status.wait_pattern_k1 rx_status.wait_pattern_k0 rx_status.idle 
+rx_status.idle 0 0 0 0 0 0 
+rx_status.wait_pattern_k0 0 0 0 0 1 1 
+rx_status.wait_pattern_k1 0 0 0 1 0 1 
+rx_status.wait_pattern_B 0 0 1 0 0 1 
+rx_status.sync_align 0 1 0 0 0 1 
+rx_status.wait_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:1:traffic|tx_status
+Name tx_status.sent_client_data tx_status.sent_sync_patterns tx_status.sent_pattern_B_wait_rx_obtain tx_status.sent_pattern_k1_wait_rx_obtain tx_status.sent_pattern_k0_wait_rx_obtain tx_status.idle 
+tx_status.idle 0 0 0 0 0 0 
+tx_status.sent_pattern_k0_wait_rx_obtain 0 0 0 0 1 1 
+tx_status.sent_pattern_k1_wait_rx_obtain 0 0 0 1 0 1 
+tx_status.sent_pattern_B_wait_rx_obtain 0 0 1 0 0 1 
+tx_status.sent_sync_patterns 0 1 0 0 0 1 
+tx_status.sent_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:0:traffic|rx_status
+Name rx_status.wait_client_data rx_status.sync_align rx_status.wait_pattern_B rx_status.wait_pattern_k1 rx_status.wait_pattern_k0 rx_status.idle 
+rx_status.idle 0 0 0 0 0 0 
+rx_status.wait_pattern_k0 0 0 0 0 1 1 
+rx_status.wait_pattern_k1 0 0 0 1 0 1 
+rx_status.wait_pattern_B 0 0 1 0 0 1 
+rx_status.sync_align 0 1 0 0 0 1 
+rx_status.wait_client_data 1 0 0 0 0 1 
+
+State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:0:traffic|tx_status
+Name tx_status.sent_client_data tx_status.sent_sync_patterns tx_status.sent_pattern_B_wait_rx_obtain tx_status.sent_pattern_k1_wait_rx_obtain tx_status.sent_pattern_k0_wait_rx_obtain tx_status.idle 
+tx_status.idle 0 0 0 0 0 0 
+tx_status.sent_pattern_k0_wait_rx_obtain 0 0 0 0 1 1 
+tx_status.sent_pattern_k1_wait_rx_obtain 0 0 0 1 0 1 
+tx_status.sent_pattern_B_wait_rx_obtain 0 0 1 0 0 1 
+tx_status.sent_sync_patterns 0 1 0 0 0 1 
+tx_status.sent_client_data 1 0 0 0 0 1 

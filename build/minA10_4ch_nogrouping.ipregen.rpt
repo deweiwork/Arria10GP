@@ -1,0 +1,371 @@
+IP Upgrade report for minA10_4ch_nogrouping
+Thu Oct 25 16:55:09 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                             ;
++------------------------------+-------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Thu Oct 25 16:55:09 2018               ;
+; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                ; minA10_4ch_nogrouping                           ;
+; Top-level Entity Name        ; XCVR_top                                        ;
+; Family                       ; Arria 10                                        ;
++------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                              ;
++-------------+----------------+---------+------------------------------+------------------------------+-----------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File         ; Generation File Path         ; New Source File ; Message ;
++-------------+----------------+---------+------------------------------+------------------------------+-----------------+---------+
+; xcvr_8B10B  ; Qsys           ; 18.0    ; XCVR_Modules/xcvr_8B10B.qsys ; XCVR_Modules/xcvr_8B10B.qsys ;                 ;         ;
+; clk_buffer  ; altclkctrl     ; 18.0    ; clk_buffer/clk_buffer.qsys   ; clk_buffer/clk_buffer.qsys   ;                 ;         ;
++-------------+----------------+---------+------------------------------+------------------------------+-----------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "XCVR_Modules/xcvr_8B10B.qsys" to "XCVR_Modules/xcvr_8B10B.BAK.qsys"
+Info (11902): Backing up file "XCVR_Modules/xcvr_8B10B/synth/xcvr_8B10B.vhd" to "XCVR_Modules/xcvr_8B10B.BAK.vhd"
+Info (11837): Started upgrading IP component Qsys with file "XCVR_Modules/xcvr_8B10B.qsys"
+Info: 2018.10.25.16:54:28 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2018.10.25.16:54:28 Info: Finished upgrading the ip cores
+Info: 2018.10.25.16:54:41 Info: Saving generation log to /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B
+Info: 2018.10.25.16:54:41 Info: Starting: Create simulation model
+Info: 2018.10.25.16:54:41 Info: Loading XCVR_Modules
+Info: 2018.10.25.16:54:41 Info: Reading input file
+Info: 2018.10.25.16:54:41 Info: Adding clk_0 [clock_source 18.1]
+Info: 2018.10.25.16:54:41 Info: Parameterizing module clk_0
+Info: 2018.10.25.16:54:41 Info: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 18.1]
+Info: 2018.10.25.16:54:41 Info: Parameterizing module xcvr_atx_pll_a10_0
+Info: 2018.10.25.16:54:41 Info: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 18.1]
+Info: 2018.10.25.16:54:41 Info: Parameterizing module xcvr_native_a10_0
+Info: 2018.10.25.16:54:41 Info: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 18.1]
+Info: 2018.10.25.16:54:41 Info: Parameterizing module xcvr_reset_control_0
+Info: 2018.10.25.16:54:41 Info: Building connections
+Info: 2018.10.25.16:54:41 Info: Parameterizing connections
+Info: 2018.10.25.16:54:41 Info: Validating
+Info: 2018.10.25.16:54:44 Info: Done reading input file
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B.xcvr_atx_pll_a10_0: For the selected device(10AX066N3F40E2SG), PLL speed grade is 3.
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B.xcvr_native_a10_0: For the selected device(10AX066N3F40E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B.xcvr_native_a10_0: <html><font color="blue">Note - </font>The external TX PLL IP must be configured with an output clock frequency of 1270.0 MHz.<
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B: "Transforming system: xcvr_8B10B"
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B: Running transform generation_view_transform
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:45 Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform
+Info: 2018.10.25.16:54:45 Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:45 Info: xcvr_native_a10_0: Running transform generation_view_transform
+Info: 2018.10.25.16:54:45 Info: xcvr_native_a10_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:45 Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: 2018.10.25.16:54:45 Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:45 Info: xcvr_8B10B: Running transform merlin_avalon_transform
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: Running transform merlin_avalon_transform took 0.050s
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: "Naming system components in system: xcvr_8B10B"
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: "Processing generation queue"
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: "Generating: xcvr_8B10B"
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_atx_pll_a10_181_fly5vza"
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/twentynm_xcvr_avmm.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_arbiter.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_atx_pll_rcfg_arb.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_xcvr_atx_pll.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_atx_pll_rcfg_arb.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/a10_xcvr_atx_pll.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source
+Info: 2018.10.25.16:54:46 Info: xcvr_atx_pll_a10_0: add_fileset_file ./mentor/alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor/source
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_native_a10_181_bv4fmyi"
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./mentor/alt_xcvr_arbiter.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../../altera_xcvr_generic/mentor/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pcs.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pma.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_native.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_pcs.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_pma.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_xcvr_avmm.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./mentor/twentynm_xcvr_native.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../alt_xcvr_core/nf/mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_pipe_retry.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_avmm_csr.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_prbs_accum.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_odi_accel.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_rcfg_arb.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_params_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_commands_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_functions_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_program.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_cpu.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_master.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_ip.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: "Generating: altera_xcvr_reset_control"
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./mentor/altera_xcvr_functions.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../altera_xcvr_generic/mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./mentor/alt_xcvr_resync.sv SYSTEM_VERILOG_ENCRYPT PATH ../../../altera_xcvr_generic/mentor/ctrl
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./mentor/altera_xcvr_reset_control.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_reset_control_0: add_fileset_file ./mentor/alt_xcvr_reset_counter.sv SYSTEM_VERILOG_ENCRYPT PATH ../mentor
+Info: 2018.10.25.16:54:46 Info: xcvr_8B10B: Done "xcvr_8B10B" with 4 modules, 71 files
+Info: 2018.10.25.16:54:46 Info: qsys-generate succeeded.
+Info: 2018.10.25.16:54:46 Info: Finished: Create simulation model
+Info: 2018.10.25.16:54:46 Info: Starting: Create Modelsim Project.
+Info: 2018.10.25.16:54:46 Info: sim-script-gen --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/xcvr_8B10B.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:46 Info: Doing: ip-make-simscript --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/xcvr_8B10B.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:47 Info: Generating the following file(s) for MODELSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:47 Info:     mentor
+Info: 2018.10.25.16:54:47 Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib
+Info: 2018.10.25.16:54:47 Info: Generating the following file(s) for VCSMX simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:47 Info:     synopsys/vcsmx
+Info: 2018.10.25.16:54:47 Info:     synopsys/vcsmx
+Info: 2018.10.25.16:54:47 Info: Generating the following file(s) for NCSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:47 Info:     cadence
+Info: 2018.10.25.16:54:47 Info:     cadence
+Info: 2018.10.25.16:54:47 Info:     cadence
+Info: 2018.10.25.16:54:47 Info:     4 .cds.lib files in cadence/cds_libs
+Info: 2018.10.25.16:54:47 Info: Generating the following file(s) for RIVIERA simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:47 Info:     aldec
+Info: 2018.10.25.16:54:47 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/XCVR_Modules/xcvr_8B10B/sim
+Info: 2018.10.25.16:54:47 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2018.10.25.16:54:47 Info: Finished: Create Modelsim Project.
+Info: 2018.10.25.16:54:47 Info: Starting: Create block symbol file (.bsf)
+Info: 2018.10.25.16:54:47 Info: Loading XCVR_Modules
+Info: 2018.10.25.16:54:47 Info: Reading input file
+Info: 2018.10.25.16:54:47 Info: Adding clk_0 [clock_source 18.1]
+Info: 2018.10.25.16:54:47 Info: Parameterizing module clk_0
+Info: 2018.10.25.16:54:47 Info: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 18.1]
+Info: 2018.10.25.16:54:47 Info: Parameterizing module xcvr_atx_pll_a10_0
+Info: 2018.10.25.16:54:47 Info: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 18.1]
+Info: 2018.10.25.16:54:47 Info: Parameterizing module xcvr_native_a10_0
+Info: 2018.10.25.16:54:47 Info: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 18.1]
+Info: 2018.10.25.16:54:47 Info: Parameterizing module xcvr_reset_control_0
+Info: 2018.10.25.16:54:47 Info: Building connections
+Info: 2018.10.25.16:54:47 Info: Parameterizing connections
+Info: 2018.10.25.16:54:47 Info: Validating
+Info: 2018.10.25.16:54:49 Info: Done reading input file
+Info: 2018.10.25.16:54:50 Info: xcvr_8B10B.xcvr_atx_pll_a10_0: For the selected device(10AX066N3F40E2SG), PLL speed grade is 3.
+Info: 2018.10.25.16:54:50 Info: xcvr_8B10B.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data
+Info: 2018.10.25.16:54:50 Info: xcvr_8B10B.xcvr_native_a10_0: For the selected device(10AX066N3F40E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: 2018.10.25.16:54:50 Info: xcvr_8B10B.xcvr_native_a10_0: <html><font color="blue">Note - </font>The external TX PLL IP must be configured with an output clock frequency of 1270.0 MHz.<
+Info: 2018.10.25.16:54:51 Info: qsys-generate succeeded.
+Info: 2018.10.25.16:54:51 Info: Finished: Create block symbol file (.bsf)
+Info: 2018.10.25.16:54:51 Info:
+Info: 2018.10.25.16:54:51 Info: Starting: Create HDL design files for synthesis
+Info: 2018.10.25.16:54:51 Info: Loading XCVR_Modules
+Info: 2018.10.25.16:54:51 Info: Reading input file
+Info: 2018.10.25.16:54:51 Info: Adding clk_0 [clock_source 18.1]
+Info: 2018.10.25.16:54:51 Info: Parameterizing module clk_0
+Info: 2018.10.25.16:54:51 Info: Adding xcvr_atx_pll_a10_0 [altera_xcvr_atx_pll_a10 18.1]
+Info: 2018.10.25.16:54:51 Info: Parameterizing module xcvr_atx_pll_a10_0
+Info: 2018.10.25.16:54:51 Info: Adding xcvr_native_a10_0 [altera_xcvr_native_a10 18.1]
+Info: 2018.10.25.16:54:51 Info: Parameterizing module xcvr_native_a10_0
+Info: 2018.10.25.16:54:51 Info: Adding xcvr_reset_control_0 [altera_xcvr_reset_control 18.1]
+Info: 2018.10.25.16:54:51 Info: Parameterizing module xcvr_reset_control_0
+Info: 2018.10.25.16:54:51 Info: Building connections
+Info: 2018.10.25.16:54:51 Info: Parameterizing connections
+Info: 2018.10.25.16:54:51 Info: Validating
+Info: 2018.10.25.16:54:53 Info: Done reading input file
+Info: 2018.10.25.16:54:54 Info: xcvr_8B10B.xcvr_atx_pll_a10_0: For the selected device(10AX066N3F40E2SG), PLL speed grade is 3.
+Info: 2018.10.25.16:54:54 Info: xcvr_8B10B.xcvr_native_a10_0: Simplified data interface has been enabled. The Native PHY will present the data
+Info: 2018.10.25.16:54:54 Info: xcvr_8B10B.xcvr_native_a10_0: For the selected device(10AX066N3F40E2SG), transceiver speed grade is 3 and core speed grade is 2.
+Info: 2018.10.25.16:54:54 Info: xcvr_8B10B.xcvr_native_a10_0: <html><font color="blue">Note - </font>The external TX PLL IP must be configured with an output clock frequency of 1270.0 MHz.<
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Transforming system: xcvr_8B10B"
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: Running transform generation_view_transform
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: Running transform generation_view_transform
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:55 Info: xcvr_reset_control_0: Running transform generation_view_transform
+Info: 2018.10.25.16:54:55 Info: xcvr_reset_control_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: Running transform merlin_avalon_transform
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: Running transform merlin_avalon_transform took 0.021s
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Naming system components in system: xcvr_8B10B"
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Processing generation queue"
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Generating: xcvr_8B10B"
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_atx_pll_a10_181_fly5vza"
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_native_phy/altera_xcvr_native_vi
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_atx_pll_rcfg_arb.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./a10_xcvr_atx_pll.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_embedded_debug.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:55 Info: xcvr_atx_pll_a10_0: add_fileset_file ./alt_xcvr_pll_avmm_csr.sv SYSTEM_VERILOG PATH ../source
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Generating: xcvr_8B10B_altera_xcvr_native_a10_181_bv4fmyi"
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pcs.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_pma.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./twentynm_xcvr_native.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_functions_h.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./a10_avmm_h.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_pipe_retry.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_avmm_csr.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_prbs_accum.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_odi_accel.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./alt_xcvr_native_rcfg_arb.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_a10_false_paths.sdc SDC PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_params_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_commands_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_functions_h.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_program.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_cpu.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./pcie_mgmt_master.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_native_a10_0: add_fileset_file ./altera_xcvr_native_pcie_dfe_ip.sv SYSTEM_VERILOG PATH ../pcie_dfe_ip
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: "Generating: altera_xcvr_reset_control"
+Info: 2018.10.25.16:54:55 Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic
+Info: 2018.10.25.16:54:55 Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../altera_xcvr_generic/ctrl
+Info: 2018.10.25.16:54:55 Info: xcvr_reset_control_0: add_fileset_file ./altera_xcvr_reset_control.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_reset_control_0: add_fileset_file ./alt_xcvr_reset_counter.sv SYSTEM_VERILOG PATH ../
+Info: 2018.10.25.16:54:55 Info: xcvr_8B10B: Done "xcvr_8B10B" with 4 modules, 46 files
+Info: 2018.10.25.16:54:55 Info: qsys-generate succeeded.
+Info: 2018.10.25.16:54:55 Info: Finished: Create HDL design files for synthesis
+Info (11902): Backing up file "clk_buffer/clk_buffer.qsys" to "clk_buffer/clk_buffer.BAK.qsys"
+Info (11902): Backing up file "clk_buffer/clk_buffer/synth/clk_buffer.vhd" to "clk_buffer/clk_buffer.BAK.vhd"
+Info (11837): Started upgrading IP component altclkctrl with file "clk_buffer/clk_buffer.qsys"
+Info: 2018.10.25.16:55:01 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2018.10.25.16:55:01 Info: Finished upgrading the ip cores
+Info: 2018.10.25.16:55:06 Info: Saving generation log to /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer
+Info: 2018.10.25.16:55:06 Info: Starting: Create simulation model
+Info: 2018.10.25.16:55:07 Info: Loading clk_buffer
+Info: 2018.10.25.16:55:07 Info: Reading input file
+Info: 2018.10.25.16:55:07 Info: Adding altclkctrl_0 [altclkctrl 18.1]
+Info: 2018.10.25.16:55:07 Info: Parameterizing module altclkctrl_0
+Info: 2018.10.25.16:55:07 Info: Building connections
+Info: 2018.10.25.16:55:07 Info: Parameterizing connections
+Info: 2018.10.25.16:55:07 Info: Validating
+Info: 2018.10.25.16:55:07 Info: Done reading input file
+Info: 2018.10.25.16:55:07 Info: clk_buffer.altclkctrl_0: Targeting device family: Arria 10.
+Info: 2018.10.25.16:55:07 Info: clk_buffer.altclkctrl_0: Selecting AUTO allows the compiler to pick the best clock buffer to use, while other values restrict usage to only the given clock buffer.
+Info: 2018.10.25.16:55:07 Info: clk_buffer.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added.
+Info: 2018.10.25.16:55:07 Info: clk_buffer: "Transforming system: clk_buffer"
+Info: 2018.10.25.16:55:07 Info: clk_buffer: Running transform generation_view_transform
+Info: 2018.10.25.16:55:07 Info: clk_buffer: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:55:07 Info: altclkctrl_0: Running transform generation_view_transform
+Info: 2018.10.25.16:55:07 Info: altclkctrl_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:55:07 Info: clk_buffer: Running transform merlin_avalon_transform
+Info: 2018.10.25.16:55:07 Info: clk_buffer: Running transform merlin_avalon_transform took 0.032s
+Info: 2018.10.25.16:55:07 Info: clk_buffer: "Naming system components in system: clk_buffer"
+Info: 2018.10.25.16:55:07 Info: clk_buffer: "Processing generation queue"
+Info: 2018.10.25.16:55:07 Info: clk_buffer: "Generating: clk_buffer"
+Info: 2018.10.25.16:55:07 Info: clk_buffer: "Generating: clk_buffer_altclkctrl_181_4ev4gqi"
+Info: 2018.10.25.16:55:07 Info: altclkctrl_0: Generating top-level entity clk_buffer_altclkctrl_181_4ev4gqi.
+Info: 2018.10.25.16:55:07 Info: clk_buffer: Done "clk_buffer" with 2 modules, 2 files
+Info: 2018.10.25.16:55:07 Info: qsys-generate succeeded.
+Info: 2018.10.25.16:55:07 Info: Finished: Create simulation model
+Info: 2018.10.25.16:55:07 Info: Starting: Create Modelsim Project.
+Info: 2018.10.25.16:55:07 Info: sim-script-gen --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/clk_buffer.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:07 Info: Doing: ip-make-simscript --spd=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/clk_buffer.spd --output-directory=/media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:08 Info: Generating the following file(s) for MODELSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:08 Info:     mentor
+Info: 2018.10.25.16:55:08 Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib
+Info: 2018.10.25.16:55:08 Info: Generating the following file(s) for VCSMX simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:08 Info:     synopsys/vcsmx
+Info: 2018.10.25.16:55:08 Info:     synopsys/vcsmx
+Info: 2018.10.25.16:55:08 Info: Generating the following file(s) for NCSIM simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:08 Info:     cadence
+Info: 2018.10.25.16:55:08 Info:     cadence
+Info: 2018.10.25.16:55:08 Info:     cadence
+Info: 2018.10.25.16:55:08 Info:     1 .cds.lib files in cadence/cds_libs
+Info: 2018.10.25.16:55:08 Info: Generating the following file(s) for RIVIERA simulator in /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:08 Info:     aldec
+Info: 2018.10.25.16:55:08 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /media/b1409_dewei/WorkDisk/WorkSpace/BelleII/MyCode/altera/Arria10/minA10_4ch_nogrouping/clk_buffer/clk_buffer/sim
+Info: 2018.10.25.16:55:08 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2018.10.25.16:55:08 Info: Finished: Create Modelsim Project.
+Info: 2018.10.25.16:55:08 Info: Starting: Create block symbol file (.bsf)
+Info: 2018.10.25.16:55:08 Info: Loading clk_buffer
+Info: 2018.10.25.16:55:08 Info: Reading input file
+Info: 2018.10.25.16:55:08 Info: Adding altclkctrl_0 [altclkctrl 18.1]
+Info: 2018.10.25.16:55:08 Info: Parameterizing module altclkctrl_0
+Info: 2018.10.25.16:55:08 Info: Building connections
+Info: 2018.10.25.16:55:08 Info: Parameterizing connections
+Info: 2018.10.25.16:55:08 Info: Validating
+Info: 2018.10.25.16:55:08 Info: Done reading input file
+Info: 2018.10.25.16:55:08 Info: clk_buffer.altclkctrl_0: Targeting device family: Arria 10.
+Info: 2018.10.25.16:55:08 Info: clk_buffer.altclkctrl_0: Selecting AUTO allows the compiler to pick the best clock buffer to use, while other values restrict usage to only the given clock buffer.
+Info: 2018.10.25.16:55:08 Info: clk_buffer.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added.
+Info: 2018.10.25.16:55:08 Info: qsys-generate succeeded.
+Info: 2018.10.25.16:55:08 Info: Finished: Create block symbol file (.bsf)
+Info: 2018.10.25.16:55:08 Info:
+Info: 2018.10.25.16:55:08 Info: Starting: Create HDL design files for synthesis
+Info: 2018.10.25.16:55:08 Info: Loading clk_buffer
+Info: 2018.10.25.16:55:08 Info: Reading input file
+Info: 2018.10.25.16:55:08 Info: Adding altclkctrl_0 [altclkctrl 18.1]
+Info: 2018.10.25.16:55:08 Info: Parameterizing module altclkctrl_0
+Info: 2018.10.25.16:55:08 Info: Building connections
+Info: 2018.10.25.16:55:08 Info: Parameterizing connections
+Info: 2018.10.25.16:55:08 Info: Validating
+Info: 2018.10.25.16:55:08 Info: Done reading input file
+Info: 2018.10.25.16:55:08 Info: clk_buffer.altclkctrl_0: Targeting device family: Arria 10.
+Info: 2018.10.25.16:55:08 Info: clk_buffer.altclkctrl_0: Selecting AUTO allows the compiler to pick the best clock buffer to use, while other values restrict usage to only the given clock buffer.
+Info: 2018.10.25.16:55:08 Info: clk_buffer.altclkctrl_0: The register mode of port 'ena' is unavailable while 'ena' port not added.
+Info: 2018.10.25.16:55:08 Info: clk_buffer: "Transforming system: clk_buffer"
+Info: 2018.10.25.16:55:08 Info: clk_buffer: Running transform generation_view_transform
+Info: 2018.10.25.16:55:08 Info: clk_buffer: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:55:08 Info: altclkctrl_0: Running transform generation_view_transform
+Info: 2018.10.25.16:55:08 Info: altclkctrl_0: Running transform generation_view_transform took 0.000s
+Info: 2018.10.25.16:55:08 Info: clk_buffer: Running transform merlin_avalon_transform
+Info: 2018.10.25.16:55:08 Info: clk_buffer: Running transform merlin_avalon_transform took 0.008s
+Info: 2018.10.25.16:55:08 Info: clk_buffer: "Naming system components in system: clk_buffer"
+Info: 2018.10.25.16:55:08 Info: clk_buffer: "Processing generation queue"
+Info: 2018.10.25.16:55:08 Info: clk_buffer: "Generating: clk_buffer"
+Info: 2018.10.25.16:55:08 Info: clk_buffer: "Generating: clk_buffer_altclkctrl_181_4ev4gqi"
+Info: 2018.10.25.16:55:08 Info: altclkctrl_0: Generating top-level entity clk_buffer_altclkctrl_181_4ev4gqi.
+Info: 2018.10.25.16:55:08 Info: clk_buffer: Done "clk_buffer" with 2 modules, 3 files
+Info: 2018.10.25.16:55:09 Info: qsys-generate succeeded.
+Info: 2018.10.25.16:55:09 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component Qsys with file "XCVR_Modules/xcvr_8B10B.qsys"
+Info (11131): Completed upgrading IP component altclkctrl with file "clk_buffer/clk_buffer.qsys"
+Info (23030): Evaluation of Tcl script /opt/intelFPGA/18.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1109 megabytes
+    Info: Processing ended: Thu Oct 25 16:55:09 2018
+    Info: Elapsed time: 00:01:03
+    Info: Total CPU time (on all processors): 00:02:45
+
+

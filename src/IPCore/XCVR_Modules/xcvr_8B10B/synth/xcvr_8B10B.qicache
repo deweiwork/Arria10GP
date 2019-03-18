@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<qsys_generation_info>
+<qsys_file path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/src/IPCore/XCVR_Modules/xcvr_8B10B.qsys" />
+<gen_dir path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/src/IPCore/XCVR_Modules/xcvr_8B10B/" />
+<user_regen_policy value="Never Regenerate Existing IP" />
+<actual_regen_policy value="Never Regenerate Existing IP" />
+<gen_action value="IP Generation Skipped" />
+<gen_status value="IP Generation Succeeded" />
+</qsys_generation_info>
