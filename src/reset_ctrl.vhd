@@ -99,30 +99,30 @@ begin
                     when power_on =>
                         if (power_on_cnt = power_on_wait_clks) then
                             power_on_cnt     := 0;
-                            lane_up_status   <= wait_locked;
                             XCVR_rst_out_r   <= '0';
                             align_en_r <= '1';
+                            lane_up_status   <= wait_locked;
                         else
                             power_on_cnt     := power_on_cnt + 1;
-                            lane_up_status   <= power_on;
 
                             XCVR_rst_out_r   <= '1';
                             lane_up_r        <= '0';
                             align_en_r       <= '0';
+                            lane_up_status   <= power_on;
                         end if;
 
                     when wait_locked =>
                         if (rst_ip_done = '1') then
                             if (locked_cnt = wait_locked_clks) then
-                                lane_up_status  <= comma_align;
                                 locked_cnt      := 0;
+                                lane_up_status  <= comma_align;
                             else
                                 locked_cnt      := locked_cnt + 1;
                                 lane_up_status  <= wait_locked;
                             end if;
                         else
-                            lane_up_status      <= wait_locked;
                             locked_cnt          := 0;
+                            lane_up_status      <= wait_locked;
                         end if;
                         
                     when comma_align =>
@@ -150,12 +150,12 @@ begin
                         if (error_happen = '0' and rst_ip_done = '1') then
                         --if all_locked = '1' then
                             lane_up_r <= '1';
-                            lane_up_status          <= now_xcvr_init_done ;
                             XCVR_rst_out_r <= '0';
+                            lane_up_status          <= now_xcvr_init_done ;
                         else
                             lane_up_r <= '0';
-                            lane_up_status          <= power_on ;
                             XCVR_rst_out_r <= '1';
+                            lane_up_status          <= power_on ;
                         end if;
                     when others =>
 

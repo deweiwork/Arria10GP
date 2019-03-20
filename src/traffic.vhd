@@ -148,8 +148,8 @@ begin
                         TX_K_r         <= flag_of_k_ctrl;
 
                         if (rx_status = wait_pattern_B) then --rx received pattern_k1 , and go next status "wait_pattern_B"
-                            tx_status <= sent_pattern_B_wait_rx_obtain;
                             rx_wait_cnt := 0 ;
+                            tx_status <= sent_pattern_B_wait_rx_obtain;
                         else
                             if (rx_wait_cnt = sent_k_until_clks) then --watch dog
                                 rx_wait_cnt := 0;
@@ -165,8 +165,8 @@ begin
                         TX_K_r         <= flag_of_k_data;
 
                         if (rx_status = sync_align) then --rx received pattern_b , and go next status "wait_client_data"
-                            tx_status     <= sent_sync_patterns;
                             rx_wait_cnt := 0 ;
+                            tx_status     <= sent_sync_patterns;
                         else
                             if (rx_wait_cnt = sent_k_until_clks) then --watch dog
                                 rx_wait_cnt := 0;
