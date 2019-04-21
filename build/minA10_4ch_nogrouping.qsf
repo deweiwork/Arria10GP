@@ -1256,5 +1256,5 @@ set_global_assignment -name VHDL_FILE ../src/frame_check.vhd
 set_global_assignment -name VHDL_FILE ../src/DataStruct_param_def_header.vhd
 set_global_assignment -name VHDL_FILE ../src/clock_divider.vhd
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
-set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
