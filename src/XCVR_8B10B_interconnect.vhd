@@ -391,7 +391,7 @@ begin
             );
     end generate generate_traffic_loop;
 
-    ch_sync_buf_2ch_01 : entity work.ch_sync_buffer
+    ch_sync_buf_2ch_01 : entity work.ch_sync_buffer_2ch
     port map(
         ch_sync_buffer_data_In_ch0          => rx_Para_data_to_sync_buf_ch(0),
         ch_sync_buffer_data_In_ch1          => rx_Para_data_to_sync_buf_ch(1),
@@ -407,9 +407,9 @@ begin
         ch_sync_buffer_directly_pass        => not(grouping_enable),
         
         CLK                                 => rx_clk_buf_out(0),
-        RST_N                               => RST_N
+        Reset_n                             => RST_N
     );    
-    ch_sync_buf_2ch_23 : entity work.ch_sync_buffer
+    ch_sync_buf_2ch_23 : entity work.ch_sync_buffer_2ch
     port map(
         ch_sync_buffer_data_In_ch0          => rx_Para_data_to_sync_buf_ch(2),
         ch_sync_buffer_data_In_ch1          => rx_Para_data_to_sync_buf_ch(3),
@@ -425,7 +425,7 @@ begin
         ch_sync_buffer_directly_pass        => not(grouping_enable),
         
         CLK                                 => rx_clk_buf_out(2),
-        RST_N                               => RST_N
+        Reset_n                             => RST_N
     );
 
     rst_ctrl : entity work.reset_ctrl 

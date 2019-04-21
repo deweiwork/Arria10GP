@@ -7,18 +7,6 @@ lane_up_status.comma_align 0 0 1 0 1
 lane_up_status.pre_lane_up 0 1 0 0 1 
 lane_up_status.now_xcvr_init_done 1 0 0 0 1 
 
-State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_23|syncing_status
-Name syncing_status.sync_done syncing_status.estimate_distance syncing_status.wait_1st_sync_pattern 
-syncing_status.wait_1st_sync_pattern 0 0 0 
-syncing_status.estimate_distance 0 1 1 
-syncing_status.sync_done 1 0 1 
-
-State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status
-Name syncing_status.sync_done syncing_status.estimate_distance syncing_status.wait_1st_sync_pattern 
-syncing_status.wait_1st_sync_pattern 0 0 0 
-syncing_status.estimate_distance 0 1 1 
-syncing_status.sync_done 1 0 1 
-
 State Machine - |XCVR_TOP|XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|traffic:\generate_traffic_loop:3:traffic|rx_status
 Name rx_status.wait_client_data rx_status.sync_align rx_status.wait_pattern_B rx_status.wait_pattern_k1 rx_status.wait_pattern_k0 rx_status.idle 
 rx_status.idle 0 0 0 0 0 0 

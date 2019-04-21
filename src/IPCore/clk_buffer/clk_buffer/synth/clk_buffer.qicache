@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='us-ascii'?>
 <qsys_generation_info>
-<qsys_file path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/src/IPCore/clk_buffer/clk_buffer.qsys" />
-<gen_dir path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/src/IPCore/clk_buffer/clk_buffer/" />
+<qsys_file path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/src/IPCore/clk_buffer/clk_buffer.qsys" />
+<gen_dir path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/src/IPCore/clk_buffer/clk_buffer/" />
 <user_regen_policy value="Never Regenerate Existing IP" />
 <actual_regen_policy value="Never Regenerate Existing IP" />
 <gen_action value="IP Generation Skipped" />

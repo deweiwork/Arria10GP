@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2019.03.18.13:28:17"
- outputDirectory="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/">
+ date="2019.04.19.19:08:12"
+ outputDirectory="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/">
  <perimeter>
   <parameter
      name="AUTO_DEVICE_FAMILY"
@@ -42,23 +42,23 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/synth/alt_sld_fab.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/synth/alt_sld_fab.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/synth/alt_sld_fab_cfg.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/synth/alt_sld_fab_cfg.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/synth/alt_sld_fab.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/synth/alt_sld_fab.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/synth/alt_sld_fab_cfg.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/synth/alt_sld_fab_cfg.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/alt_sld_fab_wrapper_hw.tcl" />
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_wrapper_hw.tcl" />
   </sourceFiles>
   <childSourceFiles>
    <file
@@ -121,18 +121,18 @@
   <parameter name="NODE_COUNT" value="13" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli_cfg.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli_cfg.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli_cfg.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli_cfg.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -180,12 +180,12 @@
   <parameter name="RECEIVE_WIDTHS" value="1 1 1 1 1 1 1 1 33 33 33 33 33" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_super_splitter_181/synth/alt_sld_fab_altera_super_splitter_181_7u43jmi.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_super_splitter_181/synth/alt_sld_fab_altera_super_splitter_181_7u43jmi.sv"
        attributes="TOP_LEVEL_FILE" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_super_splitter_181/synth/alt_sld_fab_altera_super_splitter_181_7u43jmi.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_super_splitter_181/synth/alt_sld_fab_altera_super_splitter_181_7u43jmi.sv"
        attributes="TOP_LEVEL_FILE" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -209,12 +209,12 @@
   <parameter name="ADD_INTERFACE_ASGN" value="0" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_sld_splitter_181/synth/alt_sld_fab_altera_sld_splitter_181_vayh6fa.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_sld_splitter_181/synth/alt_sld_fab_altera_sld_splitter_181_vayh6fa.sv"
        attributes="TOP_LEVEL_FILE" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_sld_splitter_181/synth/alt_sld_fab_altera_sld_splitter_181_vayh6fa.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_sld_splitter_181/synth/alt_sld_fab_altera_sld_splitter_181_vayh6fa.sv"
        attributes="TOP_LEVEL_FILE" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -251,12 +251,12 @@
   <parameter name="COUNT" value="5" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_sld_jtag_hub_181/synth/alt_sld_fab_altera_sld_jtag_hub_181_uikku4i.vhd"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_sld_jtag_hub_181/synth/alt_sld_fab_altera_sld_jtag_hub_181_uikku4i.vhd"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_sld_jtag_hub_181/synth/alt_sld_fab_altera_sld_jtag_hub_181_uikku4i.vhd"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_sld_jtag_hub_181/synth/alt_sld_fab_altera_sld_jtag_hub_181_uikku4i.vhd"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -278,12 +278,12 @@
   <parameter name="DESIGN_HASH" value="48ac7519b0a059c1054b" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa.sv"
        attributes="TOP_LEVEL_FILE" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa.sv"
        attributes="TOP_LEVEL_FILE" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -306,24 +306,24 @@
      value="{use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} {use_clock 0 needs_clock 0} " />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy.v"
        attributes="" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/altera_xcvr_reset_sequencer.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/altera_xcvr_reset_sequencer.sv"
        attributes="" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_xcvr_resync.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_xcvr_resync.sv"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy.v"
        attributes="" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/altera_xcvr_reset_sequencer.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/altera_xcvr_reset_sequencer.sv"
        attributes="" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_xcvr_resync.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_a10_xcvr_reset_sequencer_181/synth/alt_xcvr_resync.sv"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
