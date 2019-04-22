@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2019.04.19.19:08:12"
+ date="2019.04.22.15:38:49"
  outputDirectory="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/">
  <perimeter>
   <parameter
@@ -86,18 +86,18 @@
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab"</message>
-   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_alt_sld_fab_181_xghmjli"</message>
+   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_alt_sld_fab_181_gupeueq"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_super_splitter_181_7u43jmi"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_sld_splitter_181_vayh6fa"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_sld_jtag_hub_181_uikku4i"</message>
-   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa"</message>
+   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_connection_identification_hub_181_nuyvw4i"</message>
   </messages>
  </entity>
  <entity
    kind="alt_sld_fab"
    version="18.1"
-   name="alt_sld_fab_alt_sld_fab_181_xghmjli">
+   name="alt_sld_fab_alt_sld_fab_181_gupeueq">
   <parameter name="MAX_WIDTH" value="33" />
   <parameter name="TOP_HUB" value="1" />
   <parameter name="DEVICE_FAMILY" value="Arria 10" />
@@ -107,7 +107,7 @@
   <parameter
      name="CLOCKS"
      value="{id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } {id {} } " />
-  <parameter name="DESIGN_HASH" value="48ac7519b0a059c1054b" />
+  <parameter name="DESIGN_HASH" value="480683a3e1b97b54a6ac" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="Unknown" />
   <parameter name="MIRROR" value="0" />
   <parameter
@@ -121,18 +121,18 @@
   <parameter name="NODE_COUNT" value="13" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_gupeueq.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli_cfg.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_gupeueq_cfg.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_gupeueq.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_xghmjli_cfg.v"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/alt_sld_fab_181/synth/alt_sld_fab_alt_sld_fab_181_gupeueq_cfg.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -163,12 +163,12 @@
   </childSourceFiles>
   <instantiator instantiator="alt_sld_fab" as="alt_sld_fab" />
   <messages>
-   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_alt_sld_fab_181_xghmjli"</message>
+   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_alt_sld_fab_181_gupeueq"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_super_splitter_181_7u43jmi"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_sld_splitter_181_vayh6fa"</message>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_sld_jtag_hub_181_uikku4i"</message>
-   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa"</message>
+   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_connection_identification_hub_181_nuyvw4i"</message>
   </messages>
  </entity>
  <entity
@@ -193,7 +193,7 @@
        path="/opt/intelFPGA/18.1/ip/altera/sld/core/altera_super_splitter/altera_super_splitter_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
-  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_xghmjli" as="presplit" />
+  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_gupeueq" as="presplit" />
   <messages>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_super_splitter_181_7u43jmi"</message>
   </messages>
@@ -222,7 +222,7 @@
        path="/opt/intelFPGA/18.1/ip/altera/sld/core/altera_super_splitter/altera_sld_splitter_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
-  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_xghmjli" as="splitter" />
+  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_gupeueq" as="splitter" />
   <messages>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_sld_splitter_181_vayh6fa"</message>
   </messages>
@@ -264,7 +264,7 @@
        path="/opt/intelFPGA/18.1/ip/altera/sld/jtag/altera_sld_jtag_hub/altera_sld_jtag_hub_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
-  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_xghmjli" as="sldfabric" />
+  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_gupeueq" as="sldfabric" />
   <messages>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_sld_jtag_hub_181_uikku4i"</message>
   </messages>
@@ -272,18 +272,18 @@
  <entity
    kind="altera_connection_identification_hub"
    version="18.1"
-   name="alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa">
+   name="alt_sld_fab_altera_connection_identification_hub_181_nuyvw4i">
   <parameter name="COUNT" value="1" />
   <parameter name="SETTINGS" value="{width 4 latency 0} " />
-  <parameter name="DESIGN_HASH" value="48ac7519b0a059c1054b" />
+  <parameter name="DESIGN_HASH" value="480683a3e1b97b54a6ac" />
   <generatedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_nuyvw4i.sv"
        attributes="TOP_LEVEL_FILE" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa.sv"
+       path="/home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/db/ip/sld45522833/altera_connection_identification_hub_181/synth/alt_sld_fab_altera_connection_identification_hub_181_nuyvw4i.sv"
        attributes="TOP_LEVEL_FILE" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -291,9 +291,9 @@
        path="/opt/intelFPGA/18.1/ip/altera/sld/core/altera_connection_identification_hub/altera_connection_identification_hub_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
-  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_xghmjli" as="ident" />
+  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_gupeueq" as="ident" />
   <messages>
-   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_connection_identification_hub_181_n4cwqqa"</message>
+   <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_connection_identification_hub_181_nuyvw4i"</message>
   </messages>
  </entity>
  <entity
@@ -331,7 +331,7 @@
        path="/opt/intelFPGA/18.1/ip/altera/sld/misc/altera_a10_xcvr_reset_sequencer/altera_a10_xcvr_reset_sequencer_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
-  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_xghmjli" as="a10xcvrfabric" />
+  <instantiator instantiator="alt_sld_fab_alt_sld_fab_181_gupeueq" as="a10xcvrfabric" />
   <messages>
    <message level="Info" culprit="alt_sld_fab">"Generating: alt_sld_fab_altera_a10_xcvr_reset_sequencer_181_ivi4soy"</message>
   </messages>

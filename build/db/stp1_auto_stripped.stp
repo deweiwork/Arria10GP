@@ -2033,7 +2033,7 @@
   </instance>
   <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="GP01" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="3" mfg_id="110" node_id="0" version="6"/>
-    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2019/03/18 13:27:40  #0">
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2019/04/22 15:37:29  #0">
       <clock name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|CLK" polarity="posedge" tap_mode="classic"/>
       <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
       <top_entity/>
@@ -2109,9 +2109,6 @@
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" tap_mode="classic"/>
         </trigger_input_vec>
         <data_input_vec>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[0]" tap_mode="classic"/>
@@ -2184,9 +2181,6 @@
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" tap_mode="classic"/>
         </data_input_vec>
         <storage_qualifier_input_vec>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[0]" tap_mode="classic"/>
@@ -2259,18 +2253,10 @@
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" tap_mode="classic"/>
         </storage_qualifier_input_vec>
       </signal_vec>
       <presentation>
         <unified_setup_data_view>
-          <node is_selected="false" level-0="alt_or" name="Status" order="lsb_to_msb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
-            <node data_index="72" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="72" tap_mode="classic" trigger_index="72" type="unknown"/>
-            <node data_index="70" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="70" tap_mode="classic" trigger_index="70" type="unknown"/>
-            <node data_index="71" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="71" tap_mode="classic" trigger_index="71" type="unknown"/>
-          </node>
           <node is_selected="false" level-0="alt_or" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
             <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
             <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[14]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
@@ -2357,11 +2343,6 @@
           <node data_index="65" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="65" tap_mode="classic" trigger_index="65" type="unknown"/>
         </unified_setup_data_view>
         <data_view>
-          <bus is_selected="false" level-0="alt_or" name="Status" order="lsb_to_msb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
-            <net data_index="72" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="72" tap_mode="classic" trigger_index="72" type="unknown"/>
-            <net data_index="70" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="70" tap_mode="classic" trigger_index="70" type="unknown"/>
-            <net data_index="71" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="71" tap_mode="classic" trigger_index="71" type="unknown"/>
-          </bus>
           <bus is_selected="false" level-0="alt_or" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
             <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
             <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[14]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
@@ -2444,11 +2425,6 @@
           <net data_index="65" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="65" tap_mode="classic" trigger_index="65" type="unknown"/>
         </data_view>
         <setup_view>
-          <bus is_selected="false" level-0="alt_or" name="Status" order="lsb_to_msb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
-            <net data_index="72" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="72" tap_mode="classic" trigger_index="72" type="unknown"/>
-            <net data_index="70" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="70" tap_mode="classic" trigger_index="70" type="unknown"/>
-            <net data_index="71" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="71" tap_mode="classic" trigger_index="71" type="unknown"/>
-          </bus>
           <bus is_selected="false" level-0="alt_or" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
             <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
             <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[14]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
@@ -2533,7 +2509,7 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="35EF782B" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2019/03/18 13:27:40  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="705CA701" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2019/04/22 15:37:29  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">
@@ -2542,8 +2518,8 @@
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>1111111111111111111111111111111111111111111111111111111111111111111111111
-            <pwr_up_transitional>1111111111111111111111111111111111111111111111111111111111111111111111111</pwr_up_transitional>
+          <transitional>1111111111111111111111111111111111111111111111111111111111111111111111
+            <pwr_up_transitional>1111111111111111111111111111111111111111111111111111111111111111111111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
@@ -2577,7 +2553,7 @@
   </instance>
   <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="GP23" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="4" mfg_id="110" node_id="0" version="6"/>
-    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2019/03/18 13:27:40  #2">
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2019/04/22 15:37:54  #0">
       <clock name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_23|CLK" polarity="posedge" tap_mode="classic"/>
       <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
       <top_entity/>
@@ -2653,9 +2629,6 @@
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" tap_mode="classic"/>
         </trigger_input_vec>
         <data_input_vec>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[0]" tap_mode="classic"/>
@@ -2728,9 +2701,6 @@
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" tap_mode="classic"/>
         </data_input_vec>
         <storage_qualifier_input_vec>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[0]" tap_mode="classic"/>
@@ -2803,18 +2773,10 @@
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" tap_mode="classic"/>
           <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" tap_mode="classic"/>
-          <wire name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" tap_mode="classic"/>
         </storage_qualifier_input_vec>
       </signal_vec>
       <presentation>
         <unified_setup_data_view>
-          <node is_selected="false" level-0="alt_or" name="Status" order="lsb_to_msb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
-            <node data_index="72" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="72" tap_mode="classic" trigger_index="72" type="unknown"/>
-            <node data_index="70" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="70" tap_mode="classic" trigger_index="70" type="unknown"/>
-            <node data_index="71" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="71" tap_mode="classic" trigger_index="71" type="unknown"/>
-          </node>
           <node is_selected="false" level-0="alt_or" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
             <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
             <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[14]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
@@ -2901,11 +2863,6 @@
           <node data_index="65" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="65" tap_mode="classic" trigger_index="65" type="unknown"/>
         </unified_setup_data_view>
         <data_view>
-          <bus is_selected="false" level-0="alt_or" name="Status" order="lsb_to_msb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
-            <net data_index="72" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="72" tap_mode="classic" trigger_index="72" type="unknown"/>
-            <net data_index="70" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="70" tap_mode="classic" trigger_index="70" type="unknown"/>
-            <net data_index="71" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="71" tap_mode="classic" trigger_index="71" type="unknown"/>
-          </bus>
           <bus is_selected="false" level-0="alt_or" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
             <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
             <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[14]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
@@ -2988,11 +2945,6 @@
           <net data_index="65" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="65" tap_mode="classic" trigger_index="65" type="unknown"/>
         </data_view>
         <setup_view>
-          <bus is_selected="false" level-0="alt_or" name="Status" order="lsb_to_msb" state="expand" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
-            <net data_index="72" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="72" tap_mode="classic" trigger_index="72" type="unknown"/>
-            <net data_index="70" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="70" tap_mode="classic" trigger_index="70" type="unknown"/>
-            <net data_index="71" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="71" tap_mode="classic" trigger_index="71" type="unknown"/>
-          </bus>
           <bus is_selected="false" level-0="alt_or" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15..0]" order="msb_to_lsb" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="combinatorial">
             <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[15]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="unknown"/>
             <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="XCVR_8B10B_interconnect:\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[14]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="unknown"/>
@@ -3077,7 +3029,7 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="35EF2049" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2019/03/18 13:27:40  #3" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="705C20BA" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2019/04/22 15:37:54  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">
@@ -3086,8 +3038,8 @@
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>1111111111111111111111111111111111111111111111111111111111111111111111111
-            <pwr_up_transitional>1111111111111111111111111111111111111111111111111111111111111111111111111</pwr_up_transitional>
+          <transitional>1111111111111111111111111111111111111111111111111111111111111111111111
+            <pwr_up_transitional>1111111111111111111111111111111111111111111111111111111111111111111111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
@@ -3120,7 +3072,7 @@
     </position_info>
   </instance>
   <global_info>
-    <single attribute="active instance" value="3"/>
+    <single attribute="active instance" value="4"/>
     <single attribute="config widget visible" value="1"/>
     <single attribute="data log widget visible" value="1"/>
     <single attribute="hierarchy widget height" value="104"/>
@@ -3130,7 +3082,7 @@
     <single attribute="lock mode" value="0"/>
     <single attribute="sof manager visible" value="1"/>
     <multi attribute="column width" size="23" value="34,34,663,74,159,78,95,96,98,98,88,88,110,101,101,101,101,101,101,101,101,67,78"/>
-    <multi attribute="frame size" size="2" value="1920,1055"/>
+    <multi attribute="frame size" size="2" value="1920,1015"/>
     <multi attribute="jtag widget size" size="2" value="347,218"/>
   </global_info>
 </session>

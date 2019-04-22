@@ -903,9 +903,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66]
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" -section_id GP01
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" -section_id GP01
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" -section_id GP01
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[0]" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[10]" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[11]" -section_id GP01
@@ -976,17 +973,9 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" -section_id GP01
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" -section_id GP01
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" -section_id GP01
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" -section_id GP01
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id GP01
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=73" -section_id GP01
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=73" -section_id GP01
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=73" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334531" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id GP01
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id GP01
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=243" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id GP01
@@ -996,36 +985,18 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to GP01|gnd -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to GP01|gnd -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to GP01|gnd -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to GP01|vcc -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to GP01|vcc -section_id GP01
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to GP01|gnd -section_id GP01
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to GP01|gnd -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id GP01
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id GP01
@@ -1109,9 +1080,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[66]
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[67] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[68] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[69] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" -section_id GP23
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[70] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" -section_id GP23
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[71] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" -section_id GP23
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[72] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[0]" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[10]" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|ch_sync_buffer_data_In_ch0[11]" -section_id GP23
@@ -1182,17 +1150,9 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -t
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[0][1]" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][0]" -section_id GP23
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|out_mux_sel_ch[1][1]" -section_id GP23
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.estimate_distance" -section_id GP23
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.sync_done" -section_id GP23
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "XCVR_8B10B_interconnect:\\Connect_XVCR_Module_loop:0:XCVR_Module_gen|ch_sync_buffer:ch_sync_buf_2ch_01|syncing_status.wait_1st_sync_pattern" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id GP23
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=73" -section_id GP23
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=73" -section_id GP23
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=73" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334532" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id GP23
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id GP23
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=243" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=1024" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id GP23
@@ -1201,14 +1161,8 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -s
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to GP23|gnd -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to GP23|gnd -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to GP23|gnd -section_id GP23
@@ -1217,21 +1171,13 @@ set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to GP23|gnd -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to GP23|gnd -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to GP23|gnd -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to GP23|vcc -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to GP23|vcc -section_id GP23
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to GP23|gnd -section_id GP23
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to GP23|gnd -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id GP23
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=1024" -section_id GP23
@@ -1256,5 +1202,47 @@ set_global_assignment -name VHDL_FILE ../src/frame_check.vhd
 set_global_assignment -name VHDL_FILE ../src/DataStruct_param_def_header.vhd
 set_global_assignment -name VHDL_FILE ../src/clock_divider.vhd
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=70" -section_id GP01
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=70" -section_id GP01
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=70" -section_id GP01
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id GP01
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=234" -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to GP01|vcc -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to GP01|vcc -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to GP01|vcc -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to GP01|vcc -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to GP01|vcc -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to GP01|gnd -section_id GP01
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to GP01|vcc -section_id GP01
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=70" -section_id GP23
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=70" -section_id GP23
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=70" -section_id GP23
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id GP23
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=234" -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to GP23|vcc -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to GP23|vcc -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to GP23|vcc -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to GP23|vcc -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to GP23|vcc -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to GP23|gnd -section_id GP23
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to GP23|vcc -section_id GP23
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

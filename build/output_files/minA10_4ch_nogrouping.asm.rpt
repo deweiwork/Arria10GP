@@ -1,5 +1,5 @@
 Assembler report for minA10_4ch_nogrouping
-Mon Mar 18 13:33:29 2019
+Mon Apr 22 15:44:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Mar 18 13:33:29 2019 ;
+; Assembler Status      ; Successful - Mon Apr 22 15:44:03 2019 ;
 ; Revision Name         ; minA10_4ch_nogrouping                 ;
 ; Top-level Entity Name ; XCVR_TOP                              ;
 ; Family                ; Arria 10                              ;
@@ -63,13 +63,13 @@ refer to the applicable agreement for further details.
 +--------+------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                ;
-+----------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                ;
-+----------------------------------------------------------------------------------------------------------+
-; /home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/ut4NoGP/build/output_files/minA10_4ch_nogrouping.sof ;
-+----------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                  ;
++------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                  ;
++------------------------------------------------------------------------------------------------------------+
+; /home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/Arria10GP/build/output_files/minA10_4ch_nogrouping.sof ;
++------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 ; Option         ; Setting                            ;
 +----------------+------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                         ;
-; Checksum       ; 0x1D126300                         ;
+; Checksum       ; 0x1D13C9B9                         ;
 +----------------+------------------------------------+
 
 
@@ -88,14 +88,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 18 13:32:50 2019
+    Info: Processing started: Mon Apr 22 15:43:23 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off minA10_4ch_nogrouping -c minA10_4ch_nogrouping
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (12914): The file, /home/dewei/WorkSpace/BelleII/MyCode/altera/Arria10/A10_4ch_2540_no_gp/src/IPCore/XCVR_Modules/xcvr_8B10B.sopcinfo, is not embedded into sof file as expected.  Some tools, such as System Console, may not function fully.
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 5087 megabytes
-    Info: Processing ended: Mon Mar 18 13:33:30 2019
-    Info: Elapsed time: 00:00:40
+    Info: Peak virtual memory: 5088 megabytes
+    Info: Processing ended: Mon Apr 22 15:44:04 2019
+    Info: Elapsed time: 00:00:41
     Info: Total CPU time (on all processors): 00:00:40
 
 
