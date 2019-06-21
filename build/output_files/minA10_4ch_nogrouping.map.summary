@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Apr 22 15:39:25 2019
+Analysis & Synthesis Status : Successful - Fri Jun 21 15:16:36 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : minA10_4ch_nogrouping
 Top-level Entity Name : XCVR_TOP
 Family : Arria 10
 Logic utilization (in ALMs) : N/A
-Total registers : 8212
+Total registers : 8216
 Total pins : 213
 Total virtual pins : 0
 Total block memory bits : 427,008

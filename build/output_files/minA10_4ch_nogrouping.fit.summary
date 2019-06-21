@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Apr 22 15:43:17 2019
+Fitter Status : Successful - Fri Jun 21 15:20:49 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : minA10_4ch_nogrouping
 Top-level Entity Name : XCVR_TOP
 Family : Arria 10
 Device : 10AX066N3F40E2SG
 Timing Models : Final
-Logic utilization (in ALMs) : 3,012 / 251,680 ( 1 % )
-Total registers : 8287
+Logic utilization (in ALMs) : 3,023 / 251,680 ( 1 % )
+Total registers : 8324
 Total pins : 223 / 812 ( 27 % )
 Total virtual pins : 0
 Total block memory bits : 427,008 / 43,642,880 ( < 1 % )
